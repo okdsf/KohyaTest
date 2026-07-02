@@ -494,19 +494,6 @@ def setup_parser() -> argparse.ArgumentParser:
         "(e.g. 1.0). Per-shot gamma head/halfbody/full = 7/5/4 (from filename suffix). Unset = disabled. "
         "Independent of --shot_type_bias. / ショットタイプ別Min-SNR gamma損失重み付けを有効化。",
     )
-    parser.add_argument(
-        "--semantic_group",
-        action="store_true",
-        help="Enable semantic-group dynamic gradient accumulation: images sharing a root_name (filename minus "
-        "shot-type suffix, e.g. charA_head/_halfbody/_full) accumulate into ONE optimizer step so a character's "
-        "shots update together. Forces dataloader shuffle off. / セマンティックグループ動的勾配累積を有効化。",
-    )
-    parser.add_argument(
-        "--semantic_group_max_size",
-        type=int,
-        default=3,
-        help="Loss scale denominator for --semantic_group (grad_scale = 1/this). Set to the max group size. Default 3.",
-    )
     return parser
 
 

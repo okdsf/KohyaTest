@@ -9,7 +9,6 @@ import sys
 import random
 import time
 import json
-import contextlib
 from multiprocessing import Value
 import numpy as np
 
@@ -1188,7 +1187,7 @@ class NetworkTrainer:
         train_dataloader = torch.utils.data.DataLoader(
             train_dataset_group,
             batch_size=1,
-            shuffle=not getattr(args, "semantic_group", False),  # semantic group needs deterministic grouped order
+            shuffle=True,
             collate_fn=collator,
             num_workers=n_workers,
             persistent_workers=args.persistent_data_loader_workers,
@@ -1580,7 +1579,6 @@ class NetworkTrainer:
             accelerator.unwrap_model(network).on_epoch_start(text_encoder, unet)  # network.train() is called here
 
             # TRAINING
-            group_acc = {"count": 0, "target": None}  # semantic-group dynamic grad-accum state (opt-in)
             skipped_dataloader = None
             if initial_step > 0:
                 skipped_dataloader = accelerator.skip_first_batches(train_dataloader, initial_step - 1)
@@ -1592,89 +1590,45 @@ class NetworkTrainer:
                     initial_step -= 1
                     continue
 
-                if getattr(args, "semantic_group", False):
-                    # --- Semantic-group dynamic gradient accumulation (opt-in) ---
-                    # Accumulate group_size consecutive micro-batches (one per image of a root_name group,
-                    # e.g. charA_head/_halfbody/_full) into ONE optimizer step, so a character's shots update
-                    # the network together. group_size comes from the dataset (batch["group_sizes_now"]).
+                with accelerator.accumulate(training_model):
                     on_step_start_for_network(text_encoder, unet)
+
+                    # preprocess batch for each model
                     self.on_step_start(args, accelerator, network, text_encoders, unet, batch, weight_dtype, is_train=True)
 
                     loss = self.process_batch(
-                        batch, text_encoders, unet, network, vae, noise_scheduler, vae_dtype, weight_dtype,
-                        accelerator, args, text_encoding_strategy, tokenize_strategy,
-                        is_train=True, train_text_encoder=train_text_encoder, train_unet=train_unet,
+                        batch,
+                        text_encoders,
+                        unet,
+                        network,
+                        vae,
+                        noise_scheduler,
+                        vae_dtype,
+                        weight_dtype,
+                        accelerator,
+                        args,
+                        text_encoding_strategy,
+                        tokenize_strategy,
+                        is_train=True,
+                        train_text_encoder=train_text_encoder,
+                        train_unet=train_unet,
                     )
 
-                    group_sizes = batch.get("group_sizes_now", None)
-                    group_target = int(group_sizes[0].item()) if group_sizes is not None and len(group_sizes) > 0 else 1
-                    if group_acc["target"] is None:
-                        group_acc["target"] = max(1, group_target)
-                    pending = group_acc["count"] + 1
-                    ready = pending >= group_acc["target"]
-                    grad_scale = 1.0 / max(1, int(getattr(args, "semantic_group_max_size", 3)))
-
-                    ctx = accelerator.no_sync(training_model) if not ready else contextlib.nullcontext()
-                    with ctx:
-                        accelerator.backward(loss * grad_scale)
-                    group_acc["count"] = pending
-                    did_optimizer_step = ready
-
-                    if ready:
+                    accelerator.backward(loss)
+                    if accelerator.sync_gradients:
                         self.all_reduce_network(accelerator, network)  # sync DDP grad manually
                         if args.max_grad_norm != 0.0:
                             params_to_clip = accelerator.unwrap_model(network).get_trainable_params()
                             accelerator.clip_grad_norm_(params_to_clip, args.max_grad_norm)
+
                         if hasattr(network, "update_grad_norms"):
                             network.update_grad_norms()
                         if hasattr(network, "update_norms"):
                             network.update_norms()
-                        optimizer.step()
-                        lr_scheduler.step()
-                        optimizer.zero_grad(set_to_none=True)
-                        logger.info(f"[semgroup] target={group_acc['target']} accumulated -> optimizer step (scale={grad_scale:.3f})")
-                        group_acc = {"count": 0, "target": None}
-                else:
-                    with accelerator.accumulate(training_model):
-                        on_step_start_for_network(text_encoder, unet)
 
-                        # preprocess batch for each model
-                        self.on_step_start(args, accelerator, network, text_encoders, unet, batch, weight_dtype, is_train=True)
-
-                        loss = self.process_batch(
-                            batch,
-                            text_encoders,
-                            unet,
-                            network,
-                            vae,
-                            noise_scheduler,
-                            vae_dtype,
-                            weight_dtype,
-                            accelerator,
-                            args,
-                            text_encoding_strategy,
-                            tokenize_strategy,
-                            is_train=True,
-                            train_text_encoder=train_text_encoder,
-                            train_unet=train_unet,
-                        )
-
-                        accelerator.backward(loss)
-                        if accelerator.sync_gradients:
-                            self.all_reduce_network(accelerator, network)  # sync DDP grad manually
-                            if args.max_grad_norm != 0.0:
-                                params_to_clip = accelerator.unwrap_model(network).get_trainable_params()
-                                accelerator.clip_grad_norm_(params_to_clip, args.max_grad_norm)
-
-                            if hasattr(network, "update_grad_norms"):
-                                network.update_grad_norms()
-                            if hasattr(network, "update_norms"):
-                                network.update_norms()
-
-                        optimizer.step()
-                        lr_scheduler.step()
-                        optimizer.zero_grad(set_to_none=True)
-                    did_optimizer_step = accelerator.sync_gradients
+                    optimizer.step()
+                    lr_scheduler.step()
+                    optimizer.zero_grad(set_to_none=True)
 
                 if args.scale_weight_norms:
                     keys_scaled, mean_norm, maximum_norm = accelerator.unwrap_model(network).apply_max_norm_regularization(
@@ -1701,7 +1655,7 @@ class NetworkTrainer:
                         max_mean_logs = {}
 
                 # Checks if the accelerator has performed an optimization step behind the scenes
-                if did_optimizer_step:
+                if accelerator.sync_gradients:
                     progress_bar.update(1)
                     global_step += 1
 
@@ -1760,7 +1714,7 @@ class NetworkTrainer:
                 # VALIDATION PER STEP: global_step is already incremented
                 # for example, if validate_every_n_steps=100, validate at step 100, 200, 300, ...
                 should_validate_step = args.validate_every_n_steps is not None and global_step % args.validate_every_n_steps == 0
-                if did_optimizer_step and validation_steps > 0 and should_validate_step:
+                if accelerator.sync_gradients and validation_steps > 0 and should_validate_step:
                     optimizer_eval_fn()
                     accelerator.unwrap_model(network).eval()
                     rng_states = switch_rng_state(args.validation_seed if args.validation_seed is not None else args.seed)

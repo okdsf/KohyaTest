@@ -991,21 +991,6 @@ class BaseDataset(torch.utils.data.Dataset):
         bucket_batch_size = self.buckets_indices[index].bucket_batch_size
         image_index = self.buckets_indices[index].batch_index * bucket_batch_size
 
-        if not hasattr(self, "_group_size_map"):
-            # semantic group: group_size = # images sharing the same root_name (filename minus shot-type suffix)
-            _root_of, _root_count = {}, {}
-            for _k, _info in self.image_data.items():
-                _bn = os.path.splitext(os.path.basename(_info.absolute_path))[0]
-                for _suf, _n in (("_head", 5), ("_halfbody", 9), ("_full", 5)):
-                    if _bn.endswith(_suf):
-                        _root = _bn[:-_n]
-                        break
-                else:
-                    _root = _bn
-                _root_of[_k] = _root
-                _root_count[_root] = _root_count.get(_root, 0) + 1
-            self._group_size_map = {_k: _root_count[_root_of[_k]] for _k in self.image_data}
-
         loss_weights = []
         captions = []
         input_ids_list = []
@@ -1021,7 +1006,6 @@ class BaseDataset(torch.utils.data.Dataset):
         masks = []
         masked_images = []
         shot_type_ids = []  # shot-type-aware training: 0=head, 1=halfbody, 2=full (from filename suffix)
-        group_size_ids = []  # semantic group: # images sharing this image's root_name
 
         for image_key in bucket[image_index : image_index + bucket_batch_size]:
             image_info = self.image_data[image_key]
@@ -1037,8 +1021,6 @@ class BaseDataset(torch.utils.data.Dataset):
                 shot_type_ids.append(1)
             else:
                 shot_type_ids.append(2)
-
-            group_size_ids.append(self._group_size_map.get(image_key, 1))
 
             # in case of fine tuning, is_reg is always False
             loss_weights.append(self.prior_loss_weight if image_info.is_reg else 1.0)
@@ -1265,7 +1247,6 @@ class BaseDataset(torch.utils.data.Dataset):
 
         example["network_multipliers"] = torch.FloatTensor([self.network_multiplier] * len(captions))
         example["shot_types"] = torch.LongTensor(shot_type_ids)
-        example["group_sizes_now"] = torch.LongTensor(group_size_ids)
 
         if self.debug_dataset:
             example["image_keys"] = bucket[image_index : image_index + self.batch_size]
