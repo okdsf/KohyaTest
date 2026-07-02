@@ -109,36 +109,6 @@ def apply_debiased_estimation(loss: torch.Tensor, timesteps: torch.IntTensor, no
     return loss
 
 
-def apply_min_snr_weight(loss, timesteps, noise_scheduler, v_prediction=False, shot_types=None):
-    """Content-aware Min-SNR gamma weighting (opt-in via --logit_normal_weight; caller applies the global scale).
-
-    Per-shot-type gamma: head/halfbody/full = 7.0/5.0/4.0 (shot_types 0/1/2 from filename suffix; default 5.0).
-    weight = min(SNR, gamma) / SNR (epsilon) or min(SNR, gamma) / (SNR + 1) (v-prediction). DDPM SNR from the scheduler.
-    """
-    device = loss.device
-    if hasattr(noise_scheduler, "all_snr"):
-        snr = noise_scheduler.all_snr.to(device)[timesteps]
-    else:
-        alphas_cumprod = noise_scheduler.alphas_cumprod.to(device)
-        alpha_prod_t = alphas_cumprod[timesteps]
-        snr = alpha_prod_t / (1 - alpha_prod_t + 1e-8)
-    snr = torch.clamp(snr, min=1e-8, max=1e8)
-
-    gamma_table = torch.tensor([7.0, 5.0, 4.0], device=device, dtype=loss.dtype)  # head, halfbody, full
-    if shot_types is not None:
-        indices = torch.clamp(shot_types.to(device=device, dtype=torch.long), 0, len(gamma_table) - 1)
-        batch_gamma = gamma_table[indices]
-    else:
-        batch_gamma = torch.full((timesteps.shape[0],), 5.0, device=device, dtype=loss.dtype)
-
-    target_weight = torch.minimum(snr, batch_gamma)
-    if v_prediction:
-        final_weight = target_weight / (snr + 1.0)
-    else:
-        final_weight = target_weight / snr
-    return loss * final_weight
-
-
 # TODO train_utilと分散しているのでどちらかに寄せる
 
 
