@@ -1,0 +1,10 @@
+{
+  "_description": "FLUX.1-dev - 使用 shift + discrete_flow_shift 时间步采样",
+  "_branch_id": "flux_shift_off",
+  "_base": "base_flux.json",
+  "_script": "flux_train_network.py",
+  
+  "timestep_sampling": "shift",
+  "discrete_flow_shift": 3.1582
+}
+

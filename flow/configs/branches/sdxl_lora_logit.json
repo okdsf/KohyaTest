@@ -1,0 +1,18 @@
+{
+  "_description": "SDXL LoRA - 仅启用 logit_normal_weight（无 v_parameterization）",
+  "_branch_id": "sdxl_lora_logit",
+  "_base": "base_sdxl.json",
+  "_script": "sdxl_train_network.py",
+  
+  "network_module": "networks.lora",
+  "network_dim": 128,
+  "network_alpha": 64,
+  
+  "learning_rate": "1.6e-4",
+  "unet_lr": "1.6e-4",
+  "text_encoder_lr": "1.6e-5",
+  "optimizer_type": "AdamW8bit",
+  
+  "logit_normal_weight": 1.0
+}
+

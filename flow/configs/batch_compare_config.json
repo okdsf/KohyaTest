@@ -1,0 +1,77 @@
+{
+  "_description": "FLUX 批量对比生成配置 - 多LoRA模型横向对比",
+  "_usage": "python batch_compare_generate.py --config configs/batch_compare_config.json",
+
+  "base_model": {
+    "ckpt_path": "/root/autodl-tmp/flux1-dev.safetensors",
+    "clip_l": "/root/autodl-tmp/fluxM/clip_l.safetensors",
+    "t5xxl": "/root/autodl-tmp/fluxM/t5xxl_fp16.safetensors",
+    "ae": "/root/autodl-tmp/fluxM/ae.safetensors"
+  },
+
+  "lora_models": [
+    {
+      "name": "flux_shift",
+      "path": "/root/autodl-tmp/Sample4/Generate_HuaXiang/flux_shift/models/HuaXiang_flux_shift-step00003000.safetensors",
+      "weight": 1.0
+    },
+    {
+      "name": "flux_shift_off",
+      "path": "/root/autodl-tmp/Sample4/Generate_HuaXiang/flux_shift_off/HuaXiang_flux_shift_off-step00003000.safetensors",
+      "weight": 1.0
+    }
+  ],
+
+  "prompts": [
+    {
+      "id": "prompt_01",
+      "name": "black_suit_white_hair",
+      "positive": "HuaXiang, A solo anime female character with long, flowing white hair reaching down to her waist. She is dressed in a perfectly tailored, pure black suit with a crisp white dress shirt and a slim black tie. She stands with a confident, slightly cold posture, adjusting her cuff. The background is a modern, minimalist office corridor with cool-toned lighting and glass reflections, creating a sharp and professional atmosphere. High contrast between the white hair and the dark suit.",
+      "negative": "lowres,bad anatomy,bad hands,text,error,missing finger,extra digits,fewer digits,cropped,worst quality,low quality,signature,watermark,username,blurry"
+    },
+    {
+      "id": "prompt_02",
+      "name": "cat_ear_maid_coffee",
+      "positive": "HuaXiang, A cute anime girl with fluffy cat ears on top of her head and a matching tail visible behind her. She is wearing a classic black and white maid outfit with a frilled apron and a headpiece. She is carefully holding a silver serving tray with a steaming white ceramic cup of coffee and a small pitcher of milk. She has a welcoming expression. The setting is a cozy, vintage coffee shop interior with wooden furniture, warm yellow ambient lighting, and sunlight filtering softly through a window.",
+      "negative": "lowres,bad anatomy,bad hands,text,error,missing finger,extra digits,fewer digits,cropped,worst quality,low quality,signature,watermark,username,blurry"
+    },
+    {
+      "id": "prompt_03",
+      "name": "cool_red_hair_streetwear",
+      "positive": "HuaXiang, A cool and stylish anime girl with vibrant shoulder-length red hair. She is wearing a black baseball cap and dark sunglasses slid slightly down her nose, looking over the rims. Her outfit consists of a trendy oversized bomber jacket and streetwear accessories. She is standing on an urban street during the day. The lighting is bright and hard, casting distinct shadows. The atmosphere is energetic, rebellious, and fashionable.",
+      "negative": "lowres,bad anatomy,bad hands,text,error,missing finger,extra digits,fewer digits,cropped,worst quality,low quality,signature,watermark,username,blurry"
+    },
+    {
+      "id": "prompt_04",
+      "name": "classic_wedding_dress",
+      "positive": "HuaXiang, A beautiful anime woman wearing a classic, voluminous white wedding dress with intricate lace embroidery and a long train. She is holding a large, lush bouquet of white roses and greenery close to her chest. A sheer veil covers her hair, flowing down her back. She is standing in a sunlit garden with blooming flowers surrounding her. The lighting is soft, ethereal, and dreamy, with a slight bloom effect, emphasizing purity and romance.",
+      "negative": "lowres,bad anatomy,bad hands,text,error,missing finger,extra digits,fewer digits,cropped,worst quality,low quality,signature,watermark,username,blurry"
+    }
+  ],
+
+  "generation": {
+    "repeat_count": 4,
+    "batch_size": 4,
+    "width": 1056,
+    "height": 1536,
+    "steps": 28,
+    "guidance": 5.0,
+    "cfg_scale": 1.0,
+    "sampler": "euler_a",
+    "dtype": "bfloat16",
+    "flux_dtype": "bfloat16",
+    "offload": true,
+    "apply_t5_attn_mask": true
+  },
+
+  "output": {
+    "dir": "/root/autodl-tmp/comparison_output",
+    "create_grid": true,
+    "grid_padding": 8,
+    "add_labels": true,
+    "label_font_size": 24,
+    "label_bg_color": [0, 0, 0, 180],
+    "label_text_color": [255, 255, 255]
+  }
+}
+

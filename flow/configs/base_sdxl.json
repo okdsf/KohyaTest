@@ -1,0 +1,38 @@
+{
+  "_description": "SDXL 训练基础配置模板",
+  "_model_type": "sdxl",
+  
+  "pretrained_model_name_or_path": "/root/autodl-tmp/animagine-xl-4.0-zero.safetensors",
+  "resolution": "1280,1280",
+  "enable_bucket": true,
+  "max_bucket_reso": 2048,
+  "bucket_reso_steps": 64,
+  
+  "train_batch_size": 2,
+  "max_train_steps": 6500,
+  "gradient_accumulation_steps": 1,
+  
+  "lr_scheduler": "cosine",
+  "lr_warmup_steps": 200,
+  
+  "mixed_precision": "fp16",
+  "save_precision": "fp16",
+  "no_half_vae": true,
+  
+  "save_model_as": "safetensors",
+  "save_every_n_steps": 500,
+  
+  "caption_extension": ".txt",
+  "shuffle_caption": true,
+  "cache_latents": true,
+  "cache_latents_to_disk": true,
+  
+  "max_data_loader_n_workers": 0,
+  "gradient_checkpointing": true,
+  "noise_offset": 0.0357,
+  "seed": 42,
+  
+  "sample_every_n_steps": 500,
+  "sample_sampler": "euler_a"
+}
+

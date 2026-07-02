@@ -1,0 +1,18 @@
+{
+  "_description": "FLUX.1-dev - AdamW8bit 优化器 + DORA + flux_shift 时间步采样（带 Shot-Type 感知）",
+  "_branch_id": "flux_adam_dora_shift",
+  "_base": "base_flux.json",
+  "_script": "flux_train_network.py",
+  
+  "optimizer_type": "adamw8bit",
+  "learning_rate": "1e-4",
+  
+  "network_module": "lycoris.kohya",
+  "network_args": ["algo=lora", "dora_wd=True"],
+  "network_dim": 16,
+  "network_alpha": 16,
+  
+  "timestep_sampling": "flux_shift",
+  "discrete_flow_shift": 3.1582
+}
+

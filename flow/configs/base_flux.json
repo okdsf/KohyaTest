@@ -1,0 +1,51 @@
+{
+  "_description": "FLUX.1-dev 训练基础配置模板",
+  "_model_type": "flux",
+  
+  "pretrained_model_name_or_path": "/root/autodl-tmp/flux1-dev.safetensors",
+  "clip_l": "/root/autodl-tmp/fluxM/clip_l.safetensors",
+  "t5xxl": "/root/autodl-tmp/fluxM/t5xxl_fp16.safetensors",
+  "ae": "/root/autodl-tmp/fluxM/ae.safetensors",
+  
+  "resolution": "1280,1280",
+  "enable_bucket": true,
+  "max_bucket_reso": 2048,
+  "bucket_reso_steps": 64,
+  
+  "train_batch_size": 8,
+  "max_train_steps": 2500,
+  "gradient_accumulation_steps": 1,
+  
+  "learning_rate": "2e-4",
+  "optimizer_type": "adamw8bit",
+  "lr_scheduler": "cosine",
+  "lr_warmup_steps": 50,
+  
+  "network_module": "networks.lora_flux",
+  "network_dim": 16,
+  "network_alpha": 16,
+  "network_train_unet_only": true,
+  
+  "mixed_precision": "bf16",
+  "save_precision": "bf16",
+  "save_model_as": "safetensors",
+  "save_every_n_steps": 50,
+  
+  "caption_extension": ".txt",
+  "cache_latents": true,
+  "cache_latents_to_disk": true,
+  "shuffle_caption": false,
+  
+  "sample_every_n_steps": 50,
+  "sample_sampler": "euler",
+  
+  "gradient_checkpointing": true,
+  "guidance_scale": 1.0,
+  "model_prediction_type": "raw",
+  "max_data_loader_n_workers": 2,
+  "sdpa": true,
+  "seed": 42,
+  "apply_t5_attn_mask": true,
+  "t5xxl_max_token_length": 512
+}
+

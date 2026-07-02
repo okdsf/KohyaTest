@@ -1,0 +1,17 @@
+{
+  "_description": "SDXL LoCon - 原始配置（无 v_parameterization 和 logit_normal_weight）",
+  "_branch_id": "sdxl_locon_original",
+  "_base": "base_sdxl.json",
+  "_script": "sdxl_train_network.py",
+  
+  "network_module": "lycoris.kohya",
+  "network_args": ["algo=locon", "conv_dim=16", "conv_alpha=4"],
+  "network_dim": 64,
+  "network_alpha": 32,
+  
+  "learning_rate": "3.6e-5",
+  "unet_lr": "3.6e-5",
+  "text_encoder_lr": "3.6e-6",
+  "optimizer_type": "Lion"
+}
+

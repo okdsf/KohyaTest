@@ -1,0 +1,16 @@
+=== Debug Session Started: 20251216_164634 ===
+Log file saved to: /data/kohya_project/G:\Dockerkohya\Log/debug_dataset_20251216_164634.txt
+Total dataset length (steps): 19
+Interactive Controls: 'S' (Next Step), 'E' (Next Epoch), 'Q' or 'Esc' (Quit)
+
+==================== Epoch: 1 ====================
+
+--- Step: 1 (Batch Index: 1/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1_head.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1_head.png
+  > Shot Type: head
+  > Root Name: 4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, horns, blue_hair, pointy_ears, long_hair, braid, looking_at_viewer, simple_background, earrings, jewelry, open_mouth, white_background, blue_eyes, multicolored_hair, necktie, dragon_horns, open_clothes, streaked_hair, yellow_necktie, detached_collar, black_gloves, portrait, gloves, holding, white_jacket, white_coat, purple_eyes, upper_body, makeup, head_tilt, eyeshadow
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])

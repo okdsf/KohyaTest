@@ -1,0 +1,29 @@
+{
+  "_description": "局部覆盖配置示例 - 将此文件命名为 override.json 放在数据集文件夹内",
+  "_usage": "此配置会覆盖默认参数，仅对当前数据集生效",
+  
+  "global_overrides": {
+    "_comment": "这里的参数会应用到所有训练分支",
+    "max_train_steps": 12000,
+    "train_batch_size": 1
+  },
+  
+  "branch_overrides": {
+    "_comment": "这里可以针对特定分支设置不同的覆盖参数",
+    
+    "sdxl_lora_both": {
+      "learning_rate": "5e-5",
+      "network_dim": 96
+    },
+    
+    "sdxl_locon_both": {
+      "learning_rate": "2e-5",
+      "network_dim": 48
+    },
+    
+    "flux_shift": {
+      "max_train_steps": 10000
+    }
+  }
+}
+

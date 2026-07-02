@@ -1,0 +1,58 @@
+{
+  "_description": "FLUX 采样提示词配置 - 自然语言风格，用于训练过程中生成测试图",
+  "_note": "{trigger_word} 会被自动替换为数据集文件夹名",
+  
+  "trigger_word_placeholder": "{trigger_word}",
+  
+  "prompts": [
+    {
+      "id": "prompt_1",
+      "name": "maid",
+      "positive": "{trigger_word}, An anime-style illustration of a playful maid with fluffy cat ears inside a classic Victorian mansion. She is wearing a frilly black and white maid outfit with a white apron and a headband. She is holding a silver serving tray with a tea set on it. She is leaning slightly forward toward the viewer with a mischievous, teasing expression, a smug smile, and one eyebrow slightly raised. The lighting is warm and soft, highlighting the texture of her hair and the ruffles of her dress. Detailed background of an elegant hallway with wood paneling.",
+      "negative": "low quality, worst quality, text, watermark, bad anatomy, bad hands, missing fingers, extra digits",
+      "steps": 28,
+      "sampler": "euler_a",
+      "cfg_scale": 7,
+      "seed": 3253429401,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "id": "prompt_2",
+      "name": "beach",
+      "positive": "{trigger_word}, A vibrant and high-quality anime illustration of a cheerful girl having fun at a sunny beach. She is wearing a colorful frilly bikini and is standing in shallow turquoise water. She is laughing and splashing water towards the camera, creating dynamic water droplets frozen in the air. Her skin has a sun-kissed glow. The background features a sparkling blue ocean, pristine white sand, and a clear blue sky with fluffy cumulus clouds. The lighting is bright, high-contrast sunlight, emphasizing the refreshing summer atmosphere.",
+      "negative": "low quality, worst quality, text, watermark, bad anatomy, bad hands, missing fingers, extra digits",
+      "steps": 28,
+      "sampler": "euler_a",
+      "cfg_scale": 7,
+      "seed": 870103784,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "id": "prompt_3",
+      "name": "lingerie",
+      "positive": "{trigger_word}, An intimate and soft anime-style masterpiece of a young woman sitting on a messy bed in a dimly lit bedroom. She is wearing elegant, sheer lace lingerie with silk ribbons. Her face is flushed red, showing a mix of extreme shyness and excitement, biting her lower lip slightly and looking up at the viewer with glassy eyes. The atmosphere is romantic and alluring. Soft, warm light from a bedside lamp casts gentle shadows on the wrinkled white bedsheets and pillows. Cinematic depth of field.",
+      "negative": "low quality, worst quality, text, watermark, bad anatomy, bad hands, missing fingers, extra digits",
+      "steps": 28,
+      "sampler": "euler_a",
+      "cfg_scale": 7,
+      "seed": 799633003,
+      "width": 1024,
+      "height": 1536
+    },
+    {
+      "id": "prompt_4",
+      "name": "reading",
+      "positive": "{trigger_word}, A peaceful and atmospheric anime art piece of a girl enjoying her leisure time reading a hardcover book. She is sitting comfortably on a cushioned window seat in a cozy living room. She wears casual, comfortable home clothes and glasses. Soft afternoon sunlight streams through the window, illuminating dust particles dancing in the air and highlighting her focused, serene expression. A steaming cup of tea sits on a small side table nearby. The background is filled with bookshelves and indoor plants. Lo-fi aesthetic vibe.",
+      "negative": "low quality, worst quality, text, watermark, bad anatomy, bad hands, missing fingers, extra digits",
+      "steps": 28,
+      "sampler": "euler_a",
+      "cfg_scale": 7,
+      "seed": 1575300349,
+      "width": 1024,
+      "height": 1536
+    }
+  ]
+}
+

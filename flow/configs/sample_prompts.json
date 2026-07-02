@@ -1,0 +1,58 @@
+{
+  "_description": "SDXL 采样提示词配置 - Danbooru 离散标签风格，用于训练过程中生成测试图",
+  "_note": "{trigger_word} 会被自动替换为数据集文件夹名",
+  
+  "trigger_word_placeholder": "{trigger_word}",
+  
+  "prompts": [
+    {
+      "id": "prompt_1",
+      "name": "tuxedo",
+      "positive": "1girl,solo, exusiai (arknights),tuxedo,{trigger_word},simple background,masterpiece,high score,great score,absurdres",
+      "negative": "lowres,bad anatomy,bad hands,text,error,missing finger,extra digits,fewer digits,cropped,worst quality,low quality,low score,bad score,average score,signature,watermark,username,blurry",
+      "steps": 28,
+      "sampler": "euler_a",
+      "cfg_scale": 5,
+      "seed": 3253429401,
+      "width": 1056,
+      "height": 1536
+    },
+    {
+      "id": "prompt_2",
+      "name": "china_dress",
+      "positive": "1girl,solo, upper body,Texas(arknights),china_dress,{trigger_word},simple background,masterpiece,high score,great score,absurdres",
+      "negative": "lowres,bad anatomy,bad hands,text,error,missing finger,extra digits,fewer digits,cropped,worst quality,low quality,low score,bad score,average score,signature,watermark,username,blurry",
+      "steps": 28,
+      "sampler": "euler_a",
+      "cfg_scale": 5,
+      "seed": 870103784,
+      "width": 1056,
+      "height": 1536
+    },
+    {
+      "id": "prompt_3",
+      "name": "maid_exusiai",
+      "positive": "1girl,solo, maid,exusiai (arknights),{trigger_word},simple background,masterpiece,high score,great score,absurdres",
+      "negative": "lowres,bad anatomy,bad hands,text,error,missing finger,extra digits,fewer digits,cropped,worst quality,low quality,low score,bad score,average score,signature,watermark,username,blurry",
+      "steps": 28,
+      "sampler": "euler_a",
+      "cfg_scale": 5,
+      "seed": 799633003,
+      "width": 1056,
+      "height": 1536
+    },
+    {
+      "id": "prompt_4",
+      "name": "maid_dusk",
+      "positive": "1girl,solo, maid,dusk(arknights),{trigger_word},simple background,masterpiece,high score,great score,absurdres",
+      "negative": "lowres,bad anatomy,bad hands,text,error,missing finger,extra digits,fewer digits,cropped,worst quality,low quality,low score,bad score,average score,signature,watermark,username,blurry",
+      "steps": 28,
+      "sampler": "euler_a",
+      "cfg_scale": 5,
+      "seed": 1575300349,
+      "width": 1056,
+      "height": 1536
+    }
+  ]
+}
+

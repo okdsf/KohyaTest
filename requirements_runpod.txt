@@ -1,0 +1,8 @@
+bitsandbytes==0.45.5
+tensorboard==2.15.2
+tensorflow==2.15.0.post1
+wheel
+tensorrt
+onnxruntime-gpu==1.19.2
+
+-r requirements.txt

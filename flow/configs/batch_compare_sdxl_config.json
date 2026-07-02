@@ -1,0 +1,58 @@
+{
+    "base_model": {
+        "ckpt_path": "/path/to/your/sdxl_base.safetensors"
+    },
+    "lora_models": [
+        {
+            "name": "base",
+            "path": null
+        },
+        {
+            "name": "lora_v1",
+            "path": "/path/to/your/lora_v1.safetensors",
+            "weight": 1.0
+        },
+        {
+            "name": "lora_v2",
+            "path": "/path/to/your/lora_v2.safetensors",
+            "weight": 0.8
+        }
+    ],
+    "prompts": [
+        {
+            "id": "prompt_1",
+            "name": "portrait",
+            "positive": "1girl, solo, portrait, detailed face, beautiful eyes, masterpiece, best quality",
+            "negative": "lowres, bad anatomy, bad hands, text, error, missing fingers, extra digit, fewer digits, cropped, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark, username, blurry"
+        },
+        {
+            "id": "prompt_2",
+            "name": "landscape",
+            "positive": "scenery, landscape, mountain, sky, clouds, nature, beautiful, masterpiece, best quality",
+            "negative": "lowres, worst quality, low quality, normal quality, jpeg artifacts, signature, watermark"
+        }
+    ],
+    "generation": {
+        "width": 1024,
+        "height": 1024,
+        "original_height": 1024,
+        "original_width": 1024,
+        "crop_top": 0,
+        "crop_left": 0,
+        "steps": 30,
+        "guidance_scale": 7.0,
+        "scheduler": "euler_a",
+        "repeat_count": 4,
+        "batch_size": 1,
+        "dtype": "float16",
+        "offload": true
+    },
+    "output": {
+        "dir": "./output/sdxl_compare",
+        "grid_padding": 8,
+        "add_labels": true,
+        "label_font_size": 24,
+        "label_bg_color": [0, 0, 0, 180],
+        "label_text_color": [255, 255, 255]
+    }
+}

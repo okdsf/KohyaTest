@@ -1,0 +1,830 @@
+=== Debug Session Started: 20251216_155437 ===
+Log file saved to: /data/kohya_project/G:\Dockerkohya\Log/debug_dataset_20251216_155437.txt
+Total dataset length (steps): 19
+Interactive Controls: 'S' (Next Step), 'E' (Next Epoch), 'Q' or 'Esc' (Quit)
+
+==================== Epoch: 1 ====================
+
+--- Step: 1 (Batch Index: 1/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/92a2a29af18becf627809b1f1862cacc608ac957_person1.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/92a2a29af18becf627809b1f1862cacc608ac957_person1.png
+  > Shot Type: full
+  > Root Name: 92a2a29af18becf627809b1f1862cacc608ac957_person1
+  > Group Size: 1
+  > Caption: 1girl, ling_\(arknights\), solo, shorts, blue_hair, long_hair, one_eye_closed, horns, full_body, pointy_ears, black_shorts, breasts, smile, holding, short_shorts, braid, yellow_necktie, boots, tail, coat, white_coat, white_footwear, white_background, dragon_horns, gourd, very_long_hair, necktie, open_clothes, looking_at_viewer, dragon_tail, blue_eyes, shirt, jewelry, large_breasts, white_shirt, simple_background, earrings, open_coat, wide_sleeves, gloves, long_sleeves, dragon_girl, multicolored_hair, thigh_strap, detached_collar, staff, ;\), elbow_gloves, closed_mouth, weapon
+  > Original Size: tensor([1536, 1056]), Target: tensor([1024,  704]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/92a2a29af18becf627809b1f1862cacc608ac957_person1.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/92a2a29af18becf627809b1f1862cacc608ac957_person1.png
+  > Shot Type: full
+  > Root Name: 92a2a29af18becf627809b1f1862cacc608ac957_person1
+  > Group Size: 1
+  > Caption: 1girl, ling_\(arknights\), solo, shorts, blue_hair, long_hair, one_eye_closed, horns, full_body, pointy_ears, black_shorts, breasts, smile, holding, short_shorts, braid, yellow_necktie, boots, tail, coat, white_coat, white_footwear, white_background, dragon_horns, gourd, very_long_hair, necktie, open_clothes, looking_at_viewer, dragon_tail, blue_eyes, shirt, jewelry, large_breasts, white_shirt, simple_background, earrings, open_coat, wide_sleeves, gloves, long_sleeves, dragon_girl, multicolored_hair, thigh_strap, detached_collar, staff, ;\), elbow_gloves, closed_mouth, weapon
+  > Original Size: tensor([1536, 1056]), Target: tensor([1024,  704]), Crop: tensor([0, 0])
+
+--- Step: 2 (Batch Index: 2/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/5709cf9b8171a5f1d321b43219357d0ee29b4334_person1_halfbody.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/5709cf9b8171a5f1d321b43219357d0ee29b4334_person1_halfbody.png
+  > Shot Type: halfbody
+  > Root Name: 5709cf9b8171a5f1d321b43219357d0ee29b4334_person1
+  > Group Size: 2
+  > Caption: 1girl, ling_\(arknights\), solo, closed_eyes, blue_hair, long_hair, horns, pointy_ears, smile, necktie, breasts, white_background, braid, gloves, jewelry, yellow_necktie, open_clothes, elbow_gloves, simple_background, earrings, facing_viewer, very_long_hair, black_gloves, dragon_horns, eyeshadow, detached_collar, multicolored_hair, makeup, upper_body, coat, open_coat, shirt, gourd, parted_lips, white_coat, white_shirt, wide_sleeves, large_breasts, streaked_hair, long_sleeves, hand_up
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/5709cf9b8171a5f1d321b43219357d0ee29b4334_person1_halfbody.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/5709cf9b8171a5f1d321b43219357d0ee29b4334_person1_halfbody.png
+  > Shot Type: halfbody
+  > Root Name: 5709cf9b8171a5f1d321b43219357d0ee29b4334_person1
+  > Group Size: 2
+  > Caption: 1girl, ling_\(arknights\), solo, closed_eyes, blue_hair, long_hair, horns, pointy_ears, smile, necktie, breasts, white_background, braid, gloves, jewelry, yellow_necktie, open_clothes, elbow_gloves, simple_background, earrings, facing_viewer, very_long_hair, black_gloves, dragon_horns, eyeshadow, detached_collar, multicolored_hair, makeup, upper_body, coat, open_coat, shirt, gourd, parted_lips, white_coat, white_shirt, wide_sleeves, large_breasts, streaked_hair, long_sleeves, hand_up
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+--- Step: 3 (Batch Index: 3/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/5709cf9b8171a5f1d321b43219357d0ee29b4334_person1.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/5709cf9b8171a5f1d321b43219357d0ee29b4334_person1.png
+  > Shot Type: full
+  > Root Name: 5709cf9b8171a5f1d321b43219357d0ee29b4334_person1
+  > Group Size: 2
+  > Caption: 1girl, ling_\(arknights\), solo, shorts, horns, long_hair, full_body, blue_hair, closed_eyes, black_shorts, pointy_ears, holding, breasts, short_shorts, yellow_necktie, tail, braid, boots, gourd, coat, dragon_tail, dragon_horns, necktie, white_background, open_clothes, white_footwear, white_coat, jewelry, very_long_hair, earrings, eyeshadow, shirt, simple_background, large_breasts, open_coat, white_shirt, gloves, wide_sleeves, thigh_strap, makeup, detached_collar, staff, facing_viewer, dragon_girl, closed_mouth, long_sleeves, multicolored_hair, elbow_gloves
+  > Original Size: tensor([1536, 1056]), Target: tensor([1024,  704]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/5709cf9b8171a5f1d321b43219357d0ee29b4334_person1.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/5709cf9b8171a5f1d321b43219357d0ee29b4334_person1.png
+  > Shot Type: full
+  > Root Name: 5709cf9b8171a5f1d321b43219357d0ee29b4334_person1
+  > Group Size: 2
+  > Caption: 1girl, ling_\(arknights\), solo, shorts, horns, long_hair, full_body, blue_hair, closed_eyes, black_shorts, pointy_ears, holding, breasts, short_shorts, yellow_necktie, tail, braid, boots, gourd, coat, dragon_tail, dragon_horns, necktie, white_background, open_clothes, white_footwear, white_coat, jewelry, very_long_hair, earrings, eyeshadow, shirt, simple_background, large_breasts, open_coat, white_shirt, gloves, wide_sleeves, thigh_strap, makeup, detached_collar, staff, facing_viewer, dragon_girl, closed_mouth, long_sleeves, multicolored_hair, elbow_gloves
+  > Original Size: tensor([1536, 1056]), Target: tensor([1024,  704]), Crop: tensor([0, 0])
+
+--- Step: 4 (Batch Index: 4/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1_head.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1_head.png
+  > Shot Type: head
+  > Root Name: 5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, one_eye_closed, horns, blue_hair, pointy_ears, long_hair, braid, parted_lips, earrings, jewelry, simple_background, white_background, multicolored_hair, necktie, blue_eyes, dragon_horns, yellow_necktie, open_clothes, streaked_hair, looking_at_viewer, black_gloves, gloves, portrait, detached_collar, makeup, eyeshadow, white_jacket, tassel_earrings
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1_head.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1_head.png
+  > Shot Type: head
+  > Root Name: 5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, one_eye_closed, horns, blue_hair, pointy_ears, long_hair, braid, parted_lips, earrings, jewelry, simple_background, white_background, multicolored_hair, necktie, blue_eyes, dragon_horns, yellow_necktie, open_clothes, streaked_hair, looking_at_viewer, black_gloves, gloves, portrait, detached_collar, makeup, eyeshadow, white_jacket, tassel_earrings
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+--- Step: 5 (Batch Index: 5/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1_halfbody.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1_halfbody.png
+  > Shot Type: halfbody
+  > Root Name: 5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, blue_hair, one_eye_closed, gourd, long_hair, horns, pointy_ears, blue_eyes, breasts, white_background, braid, yellow_necktie, necktie, jewelry, parted_lips, earrings, simple_background, gloves, open_clothes, very_long_hair, looking_at_viewer, wide_sleeves, detached_collar, elbow_gloves, coat, dragon_horns, white_coat, shorts, shirt, open_coat, multicolored_hair, black_gloves, white_shirt, cowboy_shot, black_shorts, long_sleeves, holding, large_breasts, streaked_hair, eyeshadow
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1_halfbody.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1_halfbody.png
+  > Shot Type: halfbody
+  > Root Name: 5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, blue_hair, one_eye_closed, gourd, long_hair, horns, pointy_ears, blue_eyes, breasts, white_background, braid, yellow_necktie, necktie, jewelry, parted_lips, earrings, simple_background, gloves, open_clothes, very_long_hair, looking_at_viewer, wide_sleeves, detached_collar, elbow_gloves, coat, dragon_horns, white_coat, shorts, shirt, open_coat, multicolored_hair, black_gloves, white_shirt, cowboy_shot, black_shorts, long_sleeves, holding, large_breasts, streaked_hair, eyeshadow
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+--- Step: 6 (Batch Index: 6/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1.png
+  > Shot Type: full
+  > Root Name: 5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, shorts, blue_hair, long_hair, full_body, horns, one_eye_closed, black_shorts, pointy_ears, braid, holding, breasts, short_shorts, yellow_necktie, boots, coat, white_coat, blue_eyes, tail, gourd, white_background, white_footwear, dragon_horns, necktie, open_clothes, very_long_hair, dragon_tail, shirt, open_coat, white_shirt, jewelry, earrings, simple_background, wide_sleeves, large_breasts, gloves, multicolored_hair, thigh_strap, long_sleeves, looking_at_viewer, staff, detached_collar, dragon_girl, streaked_hair, parted_lips, elbow_gloves
+  > Original Size: tensor([1536, 1056]), Target: tensor([1024,  704]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1.png
+  > Shot Type: full
+  > Root Name: 5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, shorts, blue_hair, long_hair, full_body, horns, one_eye_closed, black_shorts, pointy_ears, braid, holding, breasts, short_shorts, yellow_necktie, boots, coat, white_coat, blue_eyes, tail, gourd, white_background, white_footwear, dragon_horns, necktie, open_clothes, very_long_hair, dragon_tail, shirt, open_coat, white_shirt, jewelry, earrings, simple_background, wide_sleeves, large_breasts, gloves, multicolored_hair, thigh_strap, long_sleeves, looking_at_viewer, staff, detached_collar, dragon_girl, streaked_hair, parted_lips, elbow_gloves
+  > Original Size: tensor([1536, 1056]), Target: tensor([1024,  704]), Crop: tensor([0, 0])
+
+--- Step: 7 (Batch Index: 7/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1_head.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1_head.png
+  > Shot Type: head
+  > Root Name: 57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, one_eye_closed, horns, blue_hair, pointy_ears, long_hair, braid, earrings, jewelry, simple_background, looking_at_viewer, blue_eyes, dragon_horns, necktie, multicolored_hair, white_background, yellow_necktie, streaked_hair, open_clothes, closed_mouth, makeup, portrait, eyeshadow, black_gloves, detached_collar, gloves, white_coat, tassel_earrings, white_jacket, holding
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1_head.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1_head.png
+  > Shot Type: head
+  > Root Name: 4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, horns, blue_hair, pointy_ears, long_hair, braid, looking_at_viewer, simple_background, earrings, jewelry, open_mouth, white_background, blue_eyes, multicolored_hair, necktie, dragon_horns, open_clothes, streaked_hair, yellow_necktie, detached_collar, black_gloves, portrait, gloves, holding, white_jacket, white_coat, purple_eyes, upper_body, makeup, head_tilt, eyeshadow
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+--- Step: 8 (Batch Index: 8/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1_halfbody.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1_halfbody.png
+  > Shot Type: halfbody
+  > Root Name: 06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, one_eye_closed, long_hair, blue_hair, horns, pointy_ears, jewelry, blue_eyes, breasts, white_background, braid, necktie, looking_at_viewer, open_clothes, earrings, yellow_necktie, simple_background, gloves, very_long_hair, elbow_gloves, eyeshadow, coat, dragon_horns, wide_sleeves, white_coat, open_coat, detached_collar, black_gloves, white_shirt, makeup, shirt, gourd, multicolored_hair, long_sleeves, closed_mouth, upper_body, holding, large_breasts, streaked_hair
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1_halfbody.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1_halfbody.png
+  > Shot Type: halfbody
+  > Root Name: 57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, one_eye_closed, blue_hair, long_hair, horns, pointy_ears, blue_eyes, jewelry, breasts, white_background, braid, necktie, looking_at_viewer, open_clothes, earrings, simple_background, yellow_necktie, gloves, very_long_hair, dragon_horns, elbow_gloves, coat, open_coat, white_coat, detached_collar, wide_sleeves, eyeshadow, black_gloves, white_shirt, shirt, multicolored_hair, gourd, holding, closed_mouth, long_sleeves, makeup, upper_body, large_breasts, streaked_hair
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+--- Step: 9 (Batch Index: 9/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1.png
+  > Shot Type: full
+  > Root Name: 4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), shorts, solo, blue_hair, long_hair, full_body, horns, black_shorts, pointy_ears, short_shorts, braid, holding, breasts, boots, coat, yellow_necktie, white_coat, tail, open_mouth, white_footwear, white_background, gourd, open_clothes, very_long_hair, open_coat, necktie, dragon_horns, jewelry, blue_eyes, looking_at_viewer, earrings, white_shirt, shirt, large_breasts, dragon_tail, wide_sleeves, simple_background, thigh_strap, gloves, multicolored_hair, long_sleeves, detached_collar, staff, purple_eyes, dragon_girl, elbow_gloves
+  > Original Size: tensor([1536, 1056]), Target: tensor([1024,  704]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1.png
+  > Shot Type: full
+  > Root Name: 06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), shorts, solo, blue_hair, long_hair, one_eye_closed, full_body, horns, black_shorts, pointy_ears, short_shorts, braid, holding, breasts, yellow_necktie, boots, coat, tail, white_coat, white_footwear, white_background, dragon_horns, shirt, necktie, very_long_hair, open_clothes, gourd, white_shirt, dragon_tail, open_coat, jewelry, earrings, looking_at_viewer, large_breasts, simple_background, wide_sleeves, gloves, thigh_strap, purple_eyes, long_sleeves, multicolored_hair, blue_eyes, detached_collar, staff, dragon_girl, elbow_gloves
+  > Original Size: tensor([1536, 1056]), Target: tensor([1024,  704]), Crop: tensor([0, 0])
+
+--- Step: 10 (Batch Index: 10/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1_head.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1_head.png
+  > Shot Type: head
+  > Root Name: 57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, one_eye_closed, horns, blue_hair, pointy_ears, long_hair, braid, earrings, jewelry, simple_background, looking_at_viewer, blue_eyes, dragon_horns, necktie, multicolored_hair, white_background, yellow_necktie, streaked_hair, open_clothes, closed_mouth, makeup, portrait, eyeshadow, black_gloves, detached_collar, gloves, white_coat, tassel_earrings, white_jacket, holding
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1_head.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1_head.png
+  > Shot Type: head
+  > Root Name: 4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, horns, blue_hair, pointy_ears, long_hair, braid, looking_at_viewer, simple_background, earrings, jewelry, open_mouth, white_background, blue_eyes, multicolored_hair, necktie, dragon_horns, open_clothes, streaked_hair, yellow_necktie, detached_collar, black_gloves, portrait, gloves, holding, white_jacket, white_coat, purple_eyes, upper_body, makeup, head_tilt, eyeshadow
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+--- Step: 11 (Batch Index: 11/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1_halfbody.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1_halfbody.png
+  > Shot Type: halfbody
+  > Root Name: 4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, blue_hair, long_hair, horns, pointy_ears, jewelry, braid, looking_at_viewer, white_background, blue_eyes, necktie, yellow_necktie, earrings, open_mouth, breasts, simple_background, open_clothes, gourd, very_long_hair, gloves, elbow_gloves, black_gloves, multicolored_hair, white_coat, coat, open_coat, upper_body, white_shirt, shirt, wide_sleeves, dragon_horns, detached_collar, streaked_hair, long_sleeves, hand_up, holding, white_hair, medium_breasts, white_jacket
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1_halfbody.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1_halfbody.png
+  > Shot Type: halfbody
+  > Root Name: 4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, blue_hair, long_hair, horns, pointy_ears, jewelry, braid, looking_at_viewer, white_background, blue_eyes, necktie, yellow_necktie, earrings, open_mouth, breasts, simple_background, open_clothes, gourd, very_long_hair, gloves, elbow_gloves, black_gloves, multicolored_hair, white_coat, coat, open_coat, upper_body, white_shirt, shirt, wide_sleeves, dragon_horns, detached_collar, streaked_hair, long_sleeves, hand_up, holding, white_hair, medium_breasts, white_jacket
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+--- Step: 12 (Batch Index: 12/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1.png
+  > Shot Type: full
+  > Root Name: 06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), shorts, solo, blue_hair, long_hair, one_eye_closed, full_body, horns, black_shorts, pointy_ears, short_shorts, braid, holding, breasts, yellow_necktie, boots, coat, tail, white_coat, white_footwear, white_background, dragon_horns, shirt, necktie, very_long_hair, open_clothes, gourd, white_shirt, dragon_tail, open_coat, jewelry, earrings, looking_at_viewer, large_breasts, simple_background, wide_sleeves, gloves, thigh_strap, purple_eyes, long_sleeves, multicolored_hair, blue_eyes, detached_collar, staff, dragon_girl, elbow_gloves
+  > Original Size: tensor([1536, 1056]), Target: tensor([1024,  704]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1.png
+  > Shot Type: full
+  > Root Name: 4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), shorts, solo, blue_hair, long_hair, full_body, horns, black_shorts, pointy_ears, short_shorts, braid, holding, breasts, boots, coat, yellow_necktie, white_coat, tail, open_mouth, white_footwear, white_background, gourd, open_clothes, very_long_hair, open_coat, necktie, dragon_horns, jewelry, blue_eyes, looking_at_viewer, earrings, white_shirt, shirt, large_breasts, dragon_tail, wide_sleeves, simple_background, thigh_strap, gloves, multicolored_hair, long_sleeves, detached_collar, staff, purple_eyes, dragon_girl, elbow_gloves
+  > Original Size: tensor([1536, 1056]), Target: tensor([1024,  704]), Crop: tensor([0, 0])
+
+--- Step: 13 (Batch Index: 13/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/1ff0a34a3451ab7f97ee7298500fc4823af020cb_person1_head.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/1ff0a34a3451ab7f97ee7298500fc4823af020cb_person1_head.png
+  > Shot Type: head
+  > Root Name: 1ff0a34a3451ab7f97ee7298500fc4823af020cb_person1
+  > Group Size: 2
+  > Caption: 1girl, ling_\(arknights\), solo, one_eye_closed, horns, blue_hair, pointy_ears, long_hair, braid, jewelry, earrings, simple_background, looking_at_viewer, necktie, white_background, blue_eyes, dragon_horns, multicolored_hair, yellow_necktie, streaked_hair, closed_mouth, portrait, makeup, open_clothes, eyeshadow, black_gloves, detached_collar, gloves, white_jacket, holding, white_coat
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/1ff0a34a3451ab7f97ee7298500fc4823af020cb_person1_head.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/1ff0a34a3451ab7f97ee7298500fc4823af020cb_person1_head.png
+  > Shot Type: head
+  > Root Name: 1ff0a34a3451ab7f97ee7298500fc4823af020cb_person1
+  > Group Size: 2
+  > Caption: 1girl, ling_\(arknights\), solo, one_eye_closed, horns, blue_hair, pointy_ears, long_hair, braid, jewelry, earrings, simple_background, looking_at_viewer, necktie, white_background, blue_eyes, dragon_horns, multicolored_hair, yellow_necktie, streaked_hair, closed_mouth, portrait, makeup, open_clothes, eyeshadow, black_gloves, detached_collar, gloves, white_jacket, holding, white_coat
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+--- Step: 14 (Batch Index: 14/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/1ff0a34a3451ab7f97ee7298500fc4823af020cb_person1.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/1ff0a34a3451ab7f97ee7298500fc4823af020cb_person1.png
+  > Shot Type: full
+  > Root Name: 1ff0a34a3451ab7f97ee7298500fc4823af020cb_person1
+  > Group Size: 2
+  > Caption: 1girl, ling_\(arknights\), shorts, solo, blue_hair, long_hair, one_eye_closed, full_body, horns, black_shorts, pointy_ears, short_shorts, holding, braid, breasts, yellow_necktie, boots, coat, tail, white_coat, white_footwear, white_background, dragon_horns, necktie, gourd, shirt, very_long_hair, open_clothes, dragon_tail, white_shirt, jewelry, earrings, open_coat, large_breasts, simple_background, looking_at_viewer, wide_sleeves, purple_eyes, thigh_strap, gloves, blue_eyes, detached_collar, long_sleeves, staff, multicolored_hair, dragon_girl, elbow_gloves, closed_mouth
+  > Original Size: tensor([1536, 1056]), Target: tensor([1024,  704]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/1ff0a34a3451ab7f97ee7298500fc4823af020cb_person1.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/1ff0a34a3451ab7f97ee7298500fc4823af020cb_person1.png
+  > Shot Type: full
+  > Root Name: 1ff0a34a3451ab7f97ee7298500fc4823af020cb_person1
+  > Group Size: 2
+  > Caption: 1girl, ling_\(arknights\), shorts, solo, blue_hair, long_hair, one_eye_closed, full_body, horns, black_shorts, pointy_ears, short_shorts, holding, braid, breasts, yellow_necktie, boots, coat, tail, white_coat, white_footwear, white_background, dragon_horns, necktie, gourd, shirt, very_long_hair, open_clothes, dragon_tail, white_shirt, jewelry, earrings, open_coat, large_breasts, simple_background, looking_at_viewer, wide_sleeves, purple_eyes, thigh_strap, gloves, blue_eyes, detached_collar, long_sleeves, staff, multicolored_hair, dragon_girl, elbow_gloves, closed_mouth
+  > Original Size: tensor([1536, 1056]), Target: tensor([1024,  704]), Crop: tensor([0, 0])
+
+--- Step: 15 (Batch Index: 15/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/2abe75a78ec23c3dbc95d4e0e469e2e7dc6f53c1_person1_head.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/2abe75a78ec23c3dbc95d4e0e469e2e7dc6f53c1_person1_head.png
+  > Shot Type: head
+  > Root Name: 2abe75a78ec23c3dbc95d4e0e469e2e7dc6f53c1_person1
+  > Group Size: 2
+  > Caption: 1girl, ling_\(arknights\), solo, blue_hair, horns, pointy_ears, long_hair, open_mouth, braid, looking_at_viewer, jewelry, earrings, simple_background, blue_eyes, white_background, necktie, multicolored_hair, dragon_horns, open_clothes, yellow_necktie, streaked_hair, black_gloves, gloves, portrait, upper_teeth_only, holding, white_jacket, upper_body, detached_collar, teeth, white_coat, eyeshadow
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/2abe75a78ec23c3dbc95d4e0e469e2e7dc6f53c1_person1_head.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/2abe75a78ec23c3dbc95d4e0e469e2e7dc6f53c1_person1_head.png
+  > Shot Type: head
+  > Root Name: 2abe75a78ec23c3dbc95d4e0e469e2e7dc6f53c1_person1
+  > Group Size: 2
+  > Caption: 1girl, ling_\(arknights\), solo, blue_hair, horns, pointy_ears, long_hair, open_mouth, braid, looking_at_viewer, jewelry, earrings, simple_background, blue_eyes, white_background, necktie, multicolored_hair, dragon_horns, open_clothes, yellow_necktie, streaked_hair, black_gloves, gloves, portrait, upper_teeth_only, holding, white_jacket, upper_body, detached_collar, teeth, white_coat, eyeshadow
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+--- Step: 16 (Batch Index: 16/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/2abe75a78ec23c3dbc95d4e0e469e2e7dc6f53c1_person1_halfbody.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/2abe75a78ec23c3dbc95d4e0e469e2e7dc6f53c1_person1_halfbody.png
+  > Shot Type: halfbody
+  > Root Name: 2abe75a78ec23c3dbc95d4e0e469e2e7dc6f53c1_person1
+  > Group Size: 2
+  > Caption: 1girl, ling_\(arknights\), solo, blue_hair, long_hair, horns, gourd, pointy_ears, blue_eyes, open_mouth, white_background, breasts, braid, yellow_necktie, looking_at_viewer, jewelry, necktie, earrings, simple_background, very_long_hair, open_clothes, wide_sleeves, gloves, coat, shorts, open_coat, white_coat, detached_collar, cowboy_shot, elbow_gloves, dragon_horns, black_shorts, black_gloves, shirt, white_shirt, multicolored_hair, holding, large_breasts, long_sleeves, upper_teeth_only, streaked_hair, eyeshadow
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/2abe75a78ec23c3dbc95d4e0e469e2e7dc6f53c1_person1_halfbody.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/2abe75a78ec23c3dbc95d4e0e469e2e7dc6f53c1_person1_halfbody.png
+  > Shot Type: halfbody
+  > Root Name: 2abe75a78ec23c3dbc95d4e0e469e2e7dc6f53c1_person1
+  > Group Size: 2
+  > Caption: 1girl, ling_\(arknights\), solo, blue_hair, long_hair, horns, gourd, pointy_ears, blue_eyes, open_mouth, white_background, breasts, braid, yellow_necktie, looking_at_viewer, jewelry, necktie, earrings, simple_background, very_long_hair, open_clothes, wide_sleeves, gloves, coat, shorts, open_coat, white_coat, detached_collar, cowboy_shot, elbow_gloves, dragon_horns, black_shorts, black_gloves, shirt, white_shirt, multicolored_hair, holding, large_breasts, long_sleeves, upper_teeth_only, streaked_hair, eyeshadow
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+--- Step: 17 (Batch Index: 17/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1_head.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1_head.png
+  > Shot Type: head
+  > Root Name: 06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, one_eye_closed, horns, blue_hair, pointy_ears, long_hair, braid, earrings, jewelry, simple_background, looking_at_viewer, white_background, necktie, multicolored_hair, dragon_horns, blue_eyes, yellow_necktie, streaked_hair, makeup, open_clothes, portrait, closed_mouth, eyeshadow, black_gloves, detached_collar, gloves, purple_eyes, white_jacket, white_coat
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1_head.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1_head.png
+  > Shot Type: head
+  > Root Name: 06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, one_eye_closed, horns, blue_hair, pointy_ears, long_hair, braid, earrings, jewelry, simple_background, looking_at_viewer, white_background, necktie, multicolored_hair, dragon_horns, blue_eyes, yellow_necktie, streaked_hair, makeup, open_clothes, portrait, closed_mouth, eyeshadow, black_gloves, detached_collar, gloves, purple_eyes, white_jacket, white_coat
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+--- Step: 18 (Batch Index: 18/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1_halfbody.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1_halfbody.png
+  > Shot Type: halfbody
+  > Root Name: 06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, one_eye_closed, long_hair, blue_hair, horns, pointy_ears, jewelry, blue_eyes, breasts, white_background, braid, necktie, looking_at_viewer, open_clothes, earrings, yellow_necktie, simple_background, gloves, very_long_hair, elbow_gloves, eyeshadow, coat, dragon_horns, wide_sleeves, white_coat, open_coat, detached_collar, black_gloves, white_shirt, makeup, shirt, gourd, multicolored_hair, long_sleeves, closed_mouth, upper_body, holding, large_breasts, streaked_hair
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1_halfbody.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1_halfbody.png
+  > Shot Type: halfbody
+  > Root Name: 57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, one_eye_closed, blue_hair, long_hair, horns, pointy_ears, blue_eyes, jewelry, breasts, white_background, braid, necktie, looking_at_viewer, open_clothes, earrings, simple_background, yellow_necktie, gloves, very_long_hair, dragon_horns, elbow_gloves, coat, open_coat, white_coat, detached_collar, wide_sleeves, eyeshadow, black_gloves, white_shirt, shirt, multicolored_hair, gourd, holding, closed_mouth, long_sleeves, makeup, upper_body, large_breasts, streaked_hair
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+--- Step: 19 (Batch Index: 19/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1.png
+  > Shot Type: full
+  > Root Name: 57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), shorts, solo, blue_hair, long_hair, one_eye_closed, full_body, horns, black_shorts, pointy_ears, short_shorts, braid, holding, breasts, yellow_necktie, coat, boots, tail, white_coat, white_footwear, white_background, dragon_horns, necktie, shirt, gourd, open_clothes, very_long_hair, dragon_tail, white_shirt, jewelry, open_coat, looking_at_viewer, earrings, large_breasts, simple_background, wide_sleeves, blue_eyes, thigh_strap, gloves, purple_eyes, detached_collar, long_sleeves, multicolored_hair, staff, dragon_girl, elbow_gloves, closed_mouth
+  > Original Size: tensor([1536, 1056]), Target: tensor([1024,  704]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1.png
+  > Shot Type: full
+  > Root Name: 57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), shorts, solo, blue_hair, long_hair, one_eye_closed, full_body, horns, black_shorts, pointy_ears, short_shorts, braid, holding, breasts, yellow_necktie, coat, boots, tail, white_coat, white_footwear, white_background, dragon_horns, necktie, shirt, gourd, open_clothes, very_long_hair, dragon_tail, white_shirt, jewelry, open_coat, looking_at_viewer, earrings, large_breasts, simple_background, wide_sleeves, blue_eyes, thigh_strap, gloves, purple_eyes, detached_collar, long_sleeves, multicolored_hair, staff, dragon_girl, elbow_gloves, closed_mouth
+  > Original Size: tensor([1536, 1056]), Target: tensor([1024,  704]), Crop: tensor([0, 0])
+
+==================== Epoch: 2 ====================
+
+--- Step: 20 (Batch Index: 1/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1_head.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1_head.png
+  > Shot Type: head
+  > Root Name: 06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, one_eye_closed, horns, blue_hair, pointy_ears, long_hair, braid, earrings, jewelry, simple_background, looking_at_viewer, white_background, necktie, multicolored_hair, dragon_horns, blue_eyes, yellow_necktie, streaked_hair, makeup, open_clothes, portrait, closed_mouth, eyeshadow, black_gloves, detached_collar, gloves, purple_eyes, white_jacket, white_coat
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1_head.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1_head.png
+  > Shot Type: head
+  > Root Name: 5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, one_eye_closed, horns, blue_hair, pointy_ears, long_hair, braid, parted_lips, earrings, jewelry, simple_background, white_background, multicolored_hair, necktie, blue_eyes, dragon_horns, yellow_necktie, open_clothes, streaked_hair, looking_at_viewer, black_gloves, gloves, portrait, detached_collar, makeup, eyeshadow, white_jacket, tassel_earrings
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+--- Step: 21 (Batch Index: 2/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1_halfbody.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1_halfbody.png
+  > Shot Type: halfbody
+  > Root Name: 5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, blue_hair, one_eye_closed, gourd, long_hair, horns, pointy_ears, blue_eyes, breasts, white_background, braid, yellow_necktie, necktie, jewelry, parted_lips, earrings, simple_background, gloves, open_clothes, very_long_hair, looking_at_viewer, wide_sleeves, detached_collar, elbow_gloves, coat, dragon_horns, white_coat, shorts, shirt, open_coat, multicolored_hair, black_gloves, white_shirt, cowboy_shot, black_shorts, long_sleeves, holding, large_breasts, streaked_hair, eyeshadow
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1_halfbody.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1_halfbody.png
+  > Shot Type: halfbody
+  > Root Name: 5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, blue_hair, one_eye_closed, gourd, long_hair, horns, pointy_ears, blue_eyes, breasts, white_background, braid, yellow_necktie, necktie, jewelry, parted_lips, earrings, simple_background, gloves, open_clothes, very_long_hair, looking_at_viewer, wide_sleeves, detached_collar, elbow_gloves, coat, dragon_horns, white_coat, shorts, shirt, open_coat, multicolored_hair, black_gloves, white_shirt, cowboy_shot, black_shorts, long_sleeves, holding, large_breasts, streaked_hair, eyeshadow
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+--- Step: 22 (Batch Index: 3/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1.png
+  > Shot Type: full
+  > Root Name: 06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), shorts, solo, blue_hair, long_hair, one_eye_closed, full_body, horns, black_shorts, pointy_ears, short_shorts, braid, holding, breasts, yellow_necktie, boots, coat, tail, white_coat, white_footwear, white_background, dragon_horns, shirt, necktie, very_long_hair, open_clothes, gourd, white_shirt, dragon_tail, open_coat, jewelry, earrings, looking_at_viewer, large_breasts, simple_background, wide_sleeves, gloves, thigh_strap, purple_eyes, long_sleeves, multicolored_hair, blue_eyes, detached_collar, staff, dragon_girl, elbow_gloves
+  > Original Size: tensor([1536, 1056]), Target: tensor([1024,  704]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1.png
+  > Shot Type: full
+  > Root Name: 5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, shorts, blue_hair, long_hair, full_body, horns, one_eye_closed, black_shorts, pointy_ears, braid, holding, breasts, short_shorts, yellow_necktie, boots, coat, white_coat, blue_eyes, tail, gourd, white_background, white_footwear, dragon_horns, necktie, open_clothes, very_long_hair, dragon_tail, shirt, open_coat, white_shirt, jewelry, earrings, simple_background, wide_sleeves, large_breasts, gloves, multicolored_hair, thigh_strap, long_sleeves, looking_at_viewer, staff, detached_collar, dragon_girl, streaked_hair, parted_lips, elbow_gloves
+  > Original Size: tensor([1536, 1056]), Target: tensor([1024,  704]), Crop: tensor([0, 0])
+
+--- Step: 23 (Batch Index: 4/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/1ff0a34a3451ab7f97ee7298500fc4823af020cb_person1_head.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/1ff0a34a3451ab7f97ee7298500fc4823af020cb_person1_head.png
+  > Shot Type: head
+  > Root Name: 1ff0a34a3451ab7f97ee7298500fc4823af020cb_person1
+  > Group Size: 2
+  > Caption: 1girl, ling_\(arknights\), solo, one_eye_closed, horns, blue_hair, pointy_ears, long_hair, braid, jewelry, earrings, simple_background, looking_at_viewer, necktie, white_background, blue_eyes, dragon_horns, multicolored_hair, yellow_necktie, streaked_hair, closed_mouth, portrait, makeup, open_clothes, eyeshadow, black_gloves, detached_collar, gloves, white_jacket, holding, white_coat
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1_head.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1_head.png
+  > Shot Type: head
+  > Root Name: 4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, horns, blue_hair, pointy_ears, long_hair, braid, looking_at_viewer, simple_background, earrings, jewelry, open_mouth, white_background, blue_eyes, multicolored_hair, necktie, dragon_horns, open_clothes, streaked_hair, yellow_necktie, detached_collar, black_gloves, portrait, gloves, holding, white_jacket, white_coat, purple_eyes, upper_body, makeup, head_tilt, eyeshadow
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+--- Step: 24 (Batch Index: 5/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1_halfbody.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1_halfbody.png
+  > Shot Type: halfbody
+  > Root Name: 4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, blue_hair, long_hair, horns, pointy_ears, jewelry, braid, looking_at_viewer, white_background, blue_eyes, necktie, yellow_necktie, earrings, open_mouth, breasts, simple_background, open_clothes, gourd, very_long_hair, gloves, elbow_gloves, black_gloves, multicolored_hair, white_coat, coat, open_coat, upper_body, white_shirt, shirt, wide_sleeves, dragon_horns, detached_collar, streaked_hair, long_sleeves, hand_up, holding, white_hair, medium_breasts, white_jacket
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1_halfbody.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1_halfbody.png
+  > Shot Type: halfbody
+  > Root Name: 57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, one_eye_closed, blue_hair, long_hair, horns, pointy_ears, blue_eyes, jewelry, breasts, white_background, braid, necktie, looking_at_viewer, open_clothes, earrings, simple_background, yellow_necktie, gloves, very_long_hair, dragon_horns, elbow_gloves, coat, open_coat, white_coat, detached_collar, wide_sleeves, eyeshadow, black_gloves, white_shirt, shirt, multicolored_hair, gourd, holding, closed_mouth, long_sleeves, makeup, upper_body, large_breasts, streaked_hair
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+--- Step: 25 (Batch Index: 6/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/5709cf9b8171a5f1d321b43219357d0ee29b4334_person1.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/5709cf9b8171a5f1d321b43219357d0ee29b4334_person1.png
+  > Shot Type: full
+  > Root Name: 5709cf9b8171a5f1d321b43219357d0ee29b4334_person1
+  > Group Size: 2
+  > Caption: 1girl, ling_\(arknights\), solo, shorts, horns, long_hair, full_body, blue_hair, closed_eyes, black_shorts, pointy_ears, holding, breasts, short_shorts, yellow_necktie, tail, braid, boots, gourd, coat, dragon_tail, dragon_horns, necktie, white_background, open_clothes, white_footwear, white_coat, jewelry, very_long_hair, earrings, eyeshadow, shirt, simple_background, large_breasts, open_coat, white_shirt, gloves, wide_sleeves, thigh_strap, makeup, detached_collar, staff, facing_viewer, dragon_girl, closed_mouth, long_sleeves, multicolored_hair, elbow_gloves
+  > Original Size: tensor([1536, 1056]), Target: tensor([1024,  704]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1.png
+  > Shot Type: full
+  > Root Name: 4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), shorts, solo, blue_hair, long_hair, full_body, horns, black_shorts, pointy_ears, short_shorts, braid, holding, breasts, boots, coat, yellow_necktie, white_coat, tail, open_mouth, white_footwear, white_background, gourd, open_clothes, very_long_hair, open_coat, necktie, dragon_horns, jewelry, blue_eyes, looking_at_viewer, earrings, white_shirt, shirt, large_breasts, dragon_tail, wide_sleeves, simple_background, thigh_strap, gloves, multicolored_hair, long_sleeves, detached_collar, staff, purple_eyes, dragon_girl, elbow_gloves
+  > Original Size: tensor([1536, 1056]), Target: tensor([1024,  704]), Crop: tensor([0, 0])
+
+--- Step: 26 (Batch Index: 7/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/92a2a29af18becf627809b1f1862cacc608ac957_person1.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/92a2a29af18becf627809b1f1862cacc608ac957_person1.png
+  > Shot Type: full
+  > Root Name: 92a2a29af18becf627809b1f1862cacc608ac957_person1
+  > Group Size: 1
+  > Caption: 1girl, ling_\(arknights\), solo, shorts, blue_hair, long_hair, one_eye_closed, horns, full_body, pointy_ears, black_shorts, breasts, smile, holding, short_shorts, braid, yellow_necktie, boots, tail, coat, white_coat, white_footwear, white_background, dragon_horns, gourd, very_long_hair, necktie, open_clothes, looking_at_viewer, dragon_tail, blue_eyes, shirt, jewelry, large_breasts, white_shirt, simple_background, earrings, open_coat, wide_sleeves, gloves, long_sleeves, dragon_girl, multicolored_hair, thigh_strap, detached_collar, staff, ;\), elbow_gloves, closed_mouth, weapon
+  > Original Size: tensor([1536, 1056]), Target: tensor([1024,  704]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/92a2a29af18becf627809b1f1862cacc608ac957_person1.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/92a2a29af18becf627809b1f1862cacc608ac957_person1.png
+  > Shot Type: full
+  > Root Name: 92a2a29af18becf627809b1f1862cacc608ac957_person1
+  > Group Size: 1
+  > Caption: 1girl, ling_\(arknights\), solo, shorts, blue_hair, long_hair, one_eye_closed, horns, full_body, pointy_ears, black_shorts, breasts, smile, holding, short_shorts, braid, yellow_necktie, boots, tail, coat, white_coat, white_footwear, white_background, dragon_horns, gourd, very_long_hair, necktie, open_clothes, looking_at_viewer, dragon_tail, blue_eyes, shirt, jewelry, large_breasts, white_shirt, simple_background, earrings, open_coat, wide_sleeves, gloves, long_sleeves, dragon_girl, multicolored_hair, thigh_strap, detached_collar, staff, ;\), elbow_gloves, closed_mouth, weapon
+  > Original Size: tensor([1536, 1056]), Target: tensor([1024,  704]), Crop: tensor([0, 0])
+
+--- Step: 27 (Batch Index: 8/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/2abe75a78ec23c3dbc95d4e0e469e2e7dc6f53c1_person1_head.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/2abe75a78ec23c3dbc95d4e0e469e2e7dc6f53c1_person1_head.png
+  > Shot Type: head
+  > Root Name: 2abe75a78ec23c3dbc95d4e0e469e2e7dc6f53c1_person1
+  > Group Size: 2
+  > Caption: 1girl, ling_\(arknights\), solo, blue_hair, horns, pointy_ears, long_hair, open_mouth, braid, looking_at_viewer, jewelry, earrings, simple_background, blue_eyes, white_background, necktie, multicolored_hair, dragon_horns, open_clothes, yellow_necktie, streaked_hair, black_gloves, gloves, portrait, upper_teeth_only, holding, white_jacket, upper_body, detached_collar, teeth, white_coat, eyeshadow
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/2abe75a78ec23c3dbc95d4e0e469e2e7dc6f53c1_person1_head.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/2abe75a78ec23c3dbc95d4e0e469e2e7dc6f53c1_person1_head.png
+  > Shot Type: head
+  > Root Name: 2abe75a78ec23c3dbc95d4e0e469e2e7dc6f53c1_person1
+  > Group Size: 2
+  > Caption: 1girl, ling_\(arknights\), solo, blue_hair, horns, pointy_ears, long_hair, open_mouth, braid, looking_at_viewer, jewelry, earrings, simple_background, blue_eyes, white_background, necktie, multicolored_hair, dragon_horns, open_clothes, yellow_necktie, streaked_hair, black_gloves, gloves, portrait, upper_teeth_only, holding, white_jacket, upper_body, detached_collar, teeth, white_coat, eyeshadow
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+--- Step: 28 (Batch Index: 9/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/2abe75a78ec23c3dbc95d4e0e469e2e7dc6f53c1_person1_halfbody.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/2abe75a78ec23c3dbc95d4e0e469e2e7dc6f53c1_person1_halfbody.png
+  > Shot Type: halfbody
+  > Root Name: 2abe75a78ec23c3dbc95d4e0e469e2e7dc6f53c1_person1
+  > Group Size: 2
+  > Caption: 1girl, ling_\(arknights\), solo, blue_hair, long_hair, horns, gourd, pointy_ears, blue_eyes, open_mouth, white_background, breasts, braid, yellow_necktie, looking_at_viewer, jewelry, necktie, earrings, simple_background, very_long_hair, open_clothes, wide_sleeves, gloves, coat, shorts, open_coat, white_coat, detached_collar, cowboy_shot, elbow_gloves, dragon_horns, black_shorts, black_gloves, shirt, white_shirt, multicolored_hair, holding, large_breasts, long_sleeves, upper_teeth_only, streaked_hair, eyeshadow
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/2abe75a78ec23c3dbc95d4e0e469e2e7dc6f53c1_person1_halfbody.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/2abe75a78ec23c3dbc95d4e0e469e2e7dc6f53c1_person1_halfbody.png
+  > Shot Type: halfbody
+  > Root Name: 2abe75a78ec23c3dbc95d4e0e469e2e7dc6f53c1_person1
+  > Group Size: 2
+  > Caption: 1girl, ling_\(arknights\), solo, blue_hair, long_hair, horns, gourd, pointy_ears, blue_eyes, open_mouth, white_background, breasts, braid, yellow_necktie, looking_at_viewer, jewelry, necktie, earrings, simple_background, very_long_hair, open_clothes, wide_sleeves, gloves, coat, shorts, open_coat, white_coat, detached_collar, cowboy_shot, elbow_gloves, dragon_horns, black_shorts, black_gloves, shirt, white_shirt, multicolored_hair, holding, large_breasts, long_sleeves, upper_teeth_only, streaked_hair, eyeshadow
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+--- Step: 29 (Batch Index: 10/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1_head.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1_head.png
+  > Shot Type: head
+  > Root Name: 4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, horns, blue_hair, pointy_ears, long_hair, braid, looking_at_viewer, simple_background, earrings, jewelry, open_mouth, white_background, blue_eyes, multicolored_hair, necktie, dragon_horns, open_clothes, streaked_hair, yellow_necktie, detached_collar, black_gloves, portrait, gloves, holding, white_jacket, white_coat, purple_eyes, upper_body, makeup, head_tilt, eyeshadow
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1_head.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1_head.png
+  > Shot Type: head
+  > Root Name: 57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, one_eye_closed, horns, blue_hair, pointy_ears, long_hair, braid, earrings, jewelry, simple_background, looking_at_viewer, blue_eyes, dragon_horns, necktie, multicolored_hair, white_background, yellow_necktie, streaked_hair, open_clothes, closed_mouth, makeup, portrait, eyeshadow, black_gloves, detached_collar, gloves, white_coat, tassel_earrings, white_jacket, holding
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+--- Step: 30 (Batch Index: 11/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1_halfbody.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1_halfbody.png
+  > Shot Type: halfbody
+  > Root Name: 4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, blue_hair, long_hair, horns, pointy_ears, jewelry, braid, looking_at_viewer, white_background, blue_eyes, necktie, yellow_necktie, earrings, open_mouth, breasts, simple_background, open_clothes, gourd, very_long_hair, gloves, elbow_gloves, black_gloves, multicolored_hair, white_coat, coat, open_coat, upper_body, white_shirt, shirt, wide_sleeves, dragon_horns, detached_collar, streaked_hair, long_sleeves, hand_up, holding, white_hair, medium_breasts, white_jacket
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/5709cf9b8171a5f1d321b43219357d0ee29b4334_person1_halfbody.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/5709cf9b8171a5f1d321b43219357d0ee29b4334_person1_halfbody.png
+  > Shot Type: halfbody
+  > Root Name: 5709cf9b8171a5f1d321b43219357d0ee29b4334_person1
+  > Group Size: 2
+  > Caption: 1girl, ling_\(arknights\), solo, closed_eyes, blue_hair, long_hair, horns, pointy_ears, smile, necktie, breasts, white_background, braid, gloves, jewelry, yellow_necktie, open_clothes, elbow_gloves, simple_background, earrings, facing_viewer, very_long_hair, black_gloves, dragon_horns, eyeshadow, detached_collar, multicolored_hair, makeup, upper_body, coat, open_coat, shirt, gourd, parted_lips, white_coat, white_shirt, wide_sleeves, large_breasts, streaked_hair, long_sleeves, hand_up
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+--- Step: 31 (Batch Index: 12/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1.png
+  > Shot Type: full
+  > Root Name: 57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), shorts, solo, blue_hair, long_hair, one_eye_closed, full_body, horns, black_shorts, pointy_ears, short_shorts, braid, holding, breasts, yellow_necktie, coat, boots, tail, white_coat, white_footwear, white_background, dragon_horns, necktie, shirt, gourd, open_clothes, very_long_hair, dragon_tail, white_shirt, jewelry, open_coat, looking_at_viewer, earrings, large_breasts, simple_background, wide_sleeves, blue_eyes, thigh_strap, gloves, purple_eyes, detached_collar, long_sleeves, multicolored_hair, staff, dragon_girl, elbow_gloves, closed_mouth
+  > Original Size: tensor([1536, 1056]), Target: tensor([1024,  704]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1.png
+  > Shot Type: full
+  > Root Name: 4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), shorts, solo, blue_hair, long_hair, full_body, horns, black_shorts, pointy_ears, short_shorts, braid, holding, breasts, boots, coat, yellow_necktie, white_coat, tail, open_mouth, white_footwear, white_background, gourd, open_clothes, very_long_hair, open_coat, necktie, dragon_horns, jewelry, blue_eyes, looking_at_viewer, earrings, white_shirt, shirt, large_breasts, dragon_tail, wide_sleeves, simple_background, thigh_strap, gloves, multicolored_hair, long_sleeves, detached_collar, staff, purple_eyes, dragon_girl, elbow_gloves
+  > Original Size: tensor([1536, 1056]), Target: tensor([1024,  704]), Crop: tensor([0, 0])
+
+--- Step: 32 (Batch Index: 13/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1_head.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1_head.png
+  > Shot Type: head
+  > Root Name: 5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, one_eye_closed, horns, blue_hair, pointy_ears, long_hair, braid, parted_lips, earrings, jewelry, simple_background, white_background, multicolored_hair, necktie, blue_eyes, dragon_horns, yellow_necktie, open_clothes, streaked_hair, looking_at_viewer, black_gloves, gloves, portrait, detached_collar, makeup, eyeshadow, white_jacket, tassel_earrings
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/1ff0a34a3451ab7f97ee7298500fc4823af020cb_person1_head.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/1ff0a34a3451ab7f97ee7298500fc4823af020cb_person1_head.png
+  > Shot Type: head
+  > Root Name: 1ff0a34a3451ab7f97ee7298500fc4823af020cb_person1
+  > Group Size: 2
+  > Caption: 1girl, ling_\(arknights\), solo, one_eye_closed, horns, blue_hair, pointy_ears, long_hair, braid, jewelry, earrings, simple_background, looking_at_viewer, necktie, white_background, blue_eyes, dragon_horns, multicolored_hair, yellow_necktie, streaked_hair, closed_mouth, portrait, makeup, open_clothes, eyeshadow, black_gloves, detached_collar, gloves, white_jacket, holding, white_coat
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+--- Step: 33 (Batch Index: 14/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/1ff0a34a3451ab7f97ee7298500fc4823af020cb_person1.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/1ff0a34a3451ab7f97ee7298500fc4823af020cb_person1.png
+  > Shot Type: full
+  > Root Name: 1ff0a34a3451ab7f97ee7298500fc4823af020cb_person1
+  > Group Size: 2
+  > Caption: 1girl, ling_\(arknights\), shorts, solo, blue_hair, long_hair, one_eye_closed, full_body, horns, black_shorts, pointy_ears, short_shorts, holding, braid, breasts, yellow_necktie, boots, coat, tail, white_coat, white_footwear, white_background, dragon_horns, necktie, gourd, shirt, very_long_hair, open_clothes, dragon_tail, white_shirt, jewelry, earrings, open_coat, large_breasts, simple_background, looking_at_viewer, wide_sleeves, purple_eyes, thigh_strap, gloves, blue_eyes, detached_collar, long_sleeves, staff, multicolored_hair, dragon_girl, elbow_gloves, closed_mouth
+  > Original Size: tensor([1536, 1056]), Target: tensor([1024,  704]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/1ff0a34a3451ab7f97ee7298500fc4823af020cb_person1.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/1ff0a34a3451ab7f97ee7298500fc4823af020cb_person1.png
+  > Shot Type: full
+  > Root Name: 1ff0a34a3451ab7f97ee7298500fc4823af020cb_person1
+  > Group Size: 2
+  > Caption: 1girl, ling_\(arknights\), shorts, solo, blue_hair, long_hair, one_eye_closed, full_body, horns, black_shorts, pointy_ears, short_shorts, holding, braid, breasts, yellow_necktie, boots, coat, tail, white_coat, white_footwear, white_background, dragon_horns, necktie, gourd, shirt, very_long_hair, open_clothes, dragon_tail, white_shirt, jewelry, earrings, open_coat, large_breasts, simple_background, looking_at_viewer, wide_sleeves, purple_eyes, thigh_strap, gloves, blue_eyes, detached_collar, long_sleeves, staff, multicolored_hair, dragon_girl, elbow_gloves, closed_mouth
+  > Original Size: tensor([1536, 1056]), Target: tensor([1024,  704]), Crop: tensor([0, 0])
+
+--- Step: 34 (Batch Index: 15/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1_halfbody.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1_halfbody.png
+  > Shot Type: halfbody
+  > Root Name: 06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, one_eye_closed, long_hair, blue_hair, horns, pointy_ears, jewelry, blue_eyes, breasts, white_background, braid, necktie, looking_at_viewer, open_clothes, earrings, yellow_necktie, simple_background, gloves, very_long_hair, elbow_gloves, eyeshadow, coat, dragon_horns, wide_sleeves, white_coat, open_coat, detached_collar, black_gloves, white_shirt, makeup, shirt, gourd, multicolored_hair, long_sleeves, closed_mouth, upper_body, holding, large_breasts, streaked_hair
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1_halfbody.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1_halfbody.png
+  > Shot Type: halfbody
+  > Root Name: 06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, one_eye_closed, long_hair, blue_hair, horns, pointy_ears, jewelry, blue_eyes, breasts, white_background, braid, necktie, looking_at_viewer, open_clothes, earrings, yellow_necktie, simple_background, gloves, very_long_hair, elbow_gloves, eyeshadow, coat, dragon_horns, wide_sleeves, white_coat, open_coat, detached_collar, black_gloves, white_shirt, makeup, shirt, gourd, multicolored_hair, long_sleeves, closed_mouth, upper_body, holding, large_breasts, streaked_hair
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+--- Step: 35 (Batch Index: 16/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1.png
+  > Shot Type: full
+  > Root Name: 5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, shorts, blue_hair, long_hair, full_body, horns, one_eye_closed, black_shorts, pointy_ears, braid, holding, breasts, short_shorts, yellow_necktie, boots, coat, white_coat, blue_eyes, tail, gourd, white_background, white_footwear, dragon_horns, necktie, open_clothes, very_long_hair, dragon_tail, shirt, open_coat, white_shirt, jewelry, earrings, simple_background, wide_sleeves, large_breasts, gloves, multicolored_hair, thigh_strap, long_sleeves, looking_at_viewer, staff, detached_collar, dragon_girl, streaked_hair, parted_lips, elbow_gloves
+  > Original Size: tensor([1536, 1056]), Target: tensor([1024,  704]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/5709cf9b8171a5f1d321b43219357d0ee29b4334_person1.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/5709cf9b8171a5f1d321b43219357d0ee29b4334_person1.png
+  > Shot Type: full
+  > Root Name: 5709cf9b8171a5f1d321b43219357d0ee29b4334_person1
+  > Group Size: 2
+  > Caption: 1girl, ling_\(arknights\), solo, shorts, horns, long_hair, full_body, blue_hair, closed_eyes, black_shorts, pointy_ears, holding, breasts, short_shorts, yellow_necktie, tail, braid, boots, gourd, coat, dragon_tail, dragon_horns, necktie, white_background, open_clothes, white_footwear, white_coat, jewelry, very_long_hair, earrings, eyeshadow, shirt, simple_background, large_breasts, open_coat, white_shirt, gloves, wide_sleeves, thigh_strap, makeup, detached_collar, staff, facing_viewer, dragon_girl, closed_mouth, long_sleeves, multicolored_hair, elbow_gloves
+  > Original Size: tensor([1536, 1056]), Target: tensor([1024,  704]), Crop: tensor([0, 0])
+
+--- Step: 36 (Batch Index: 17/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1_head.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1_head.png
+  > Shot Type: head
+  > Root Name: 57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, one_eye_closed, horns, blue_hair, pointy_ears, long_hair, braid, earrings, jewelry, simple_background, looking_at_viewer, blue_eyes, dragon_horns, necktie, multicolored_hair, white_background, yellow_necktie, streaked_hair, open_clothes, closed_mouth, makeup, portrait, eyeshadow, black_gloves, detached_collar, gloves, white_coat, tassel_earrings, white_jacket, holding
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1_head.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1_head.png
+  > Shot Type: head
+  > Root Name: 06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, one_eye_closed, horns, blue_hair, pointy_ears, long_hair, braid, earrings, jewelry, simple_background, looking_at_viewer, white_background, necktie, multicolored_hair, dragon_horns, blue_eyes, yellow_necktie, streaked_hair, makeup, open_clothes, portrait, closed_mouth, eyeshadow, black_gloves, detached_collar, gloves, purple_eyes, white_jacket, white_coat
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+--- Step: 37 (Batch Index: 18/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/5709cf9b8171a5f1d321b43219357d0ee29b4334_person1_halfbody.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/5709cf9b8171a5f1d321b43219357d0ee29b4334_person1_halfbody.png
+  > Shot Type: halfbody
+  > Root Name: 5709cf9b8171a5f1d321b43219357d0ee29b4334_person1
+  > Group Size: 2
+  > Caption: 1girl, ling_\(arknights\), solo, closed_eyes, blue_hair, long_hair, horns, pointy_ears, smile, necktie, breasts, white_background, braid, gloves, jewelry, yellow_necktie, open_clothes, elbow_gloves, simple_background, earrings, facing_viewer, very_long_hair, black_gloves, dragon_horns, eyeshadow, detached_collar, multicolored_hair, makeup, upper_body, coat, open_coat, shirt, gourd, parted_lips, white_coat, white_shirt, wide_sleeves, large_breasts, streaked_hair, long_sleeves, hand_up
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1_halfbody.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1_halfbody.png
+  > Shot Type: halfbody
+  > Root Name: 57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, one_eye_closed, blue_hair, long_hair, horns, pointy_ears, blue_eyes, jewelry, breasts, white_background, braid, necktie, looking_at_viewer, open_clothes, earrings, simple_background, yellow_necktie, gloves, very_long_hair, dragon_horns, elbow_gloves, coat, open_coat, white_coat, detached_collar, wide_sleeves, eyeshadow, black_gloves, white_shirt, shirt, multicolored_hair, gourd, holding, closed_mouth, long_sleeves, makeup, upper_body, large_breasts, streaked_hair
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+--- Step: 38 (Batch Index: 19/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1.png
+  > Shot Type: full
+  > Root Name: 57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), shorts, solo, blue_hair, long_hair, one_eye_closed, full_body, horns, black_shorts, pointy_ears, short_shorts, braid, holding, breasts, yellow_necktie, coat, boots, tail, white_coat, white_footwear, white_background, dragon_horns, necktie, shirt, gourd, open_clothes, very_long_hair, dragon_tail, white_shirt, jewelry, open_coat, looking_at_viewer, earrings, large_breasts, simple_background, wide_sleeves, blue_eyes, thigh_strap, gloves, purple_eyes, detached_collar, long_sleeves, multicolored_hair, staff, dragon_girl, elbow_gloves, closed_mouth
+  > Original Size: tensor([1536, 1056]), Target: tensor([1024,  704]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1.png
+  > Shot Type: full
+  > Root Name: 06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), shorts, solo, blue_hair, long_hair, one_eye_closed, full_body, horns, black_shorts, pointy_ears, short_shorts, braid, holding, breasts, yellow_necktie, boots, coat, tail, white_coat, white_footwear, white_background, dragon_horns, shirt, necktie, very_long_hair, open_clothes, gourd, white_shirt, dragon_tail, open_coat, jewelry, earrings, looking_at_viewer, large_breasts, simple_background, wide_sleeves, gloves, thigh_strap, purple_eyes, long_sleeves, multicolored_hair, blue_eyes, detached_collar, staff, dragon_girl, elbow_gloves
+  > Original Size: tensor([1536, 1056]), Target: tensor([1024,  704]), Crop: tensor([0, 0])
+
+==================== Epoch: 3 ====================
+
+--- Step: 39 (Batch Index: 1/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1_halfbody.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1_halfbody.png
+  > Shot Type: halfbody
+  > Root Name: 06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, one_eye_closed, long_hair, blue_hair, horns, pointy_ears, jewelry, blue_eyes, breasts, white_background, braid, necktie, looking_at_viewer, open_clothes, earrings, yellow_necktie, simple_background, gloves, very_long_hair, elbow_gloves, eyeshadow, coat, dragon_horns, wide_sleeves, white_coat, open_coat, detached_collar, black_gloves, white_shirt, makeup, shirt, gourd, multicolored_hair, long_sleeves, closed_mouth, upper_body, holding, large_breasts, streaked_hair
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1_halfbody.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1_halfbody.png
+  > Shot Type: halfbody
+  > Root Name: 5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, blue_hair, one_eye_closed, gourd, long_hair, horns, pointy_ears, blue_eyes, breasts, white_background, braid, yellow_necktie, necktie, jewelry, parted_lips, earrings, simple_background, gloves, open_clothes, very_long_hair, looking_at_viewer, wide_sleeves, detached_collar, elbow_gloves, coat, dragon_horns, white_coat, shorts, shirt, open_coat, multicolored_hair, black_gloves, white_shirt, cowboy_shot, black_shorts, long_sleeves, holding, large_breasts, streaked_hair, eyeshadow
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+--- Step: 40 (Batch Index: 2/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1.png
+  > Shot Type: full
+  > Root Name: 57b769ed99cc31d3dec4fb745cb4beb412f6d8d0_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), shorts, solo, blue_hair, long_hair, one_eye_closed, full_body, horns, black_shorts, pointy_ears, short_shorts, braid, holding, breasts, yellow_necktie, coat, boots, tail, white_coat, white_footwear, white_background, dragon_horns, necktie, shirt, gourd, open_clothes, very_long_hair, dragon_tail, white_shirt, jewelry, open_coat, looking_at_viewer, earrings, large_breasts, simple_background, wide_sleeves, blue_eyes, thigh_strap, gloves, purple_eyes, detached_collar, long_sleeves, multicolored_hair, staff, dragon_girl, elbow_gloves, closed_mouth
+  > Original Size: tensor([1536, 1056]), Target: tensor([1024,  704]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1.png
+  > Shot Type: full
+  > Root Name: 5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, shorts, blue_hair, long_hair, full_body, horns, one_eye_closed, black_shorts, pointy_ears, braid, holding, breasts, short_shorts, yellow_necktie, boots, coat, white_coat, blue_eyes, tail, gourd, white_background, white_footwear, dragon_horns, necktie, open_clothes, very_long_hair, dragon_tail, shirt, open_coat, white_shirt, jewelry, earrings, simple_background, wide_sleeves, large_breasts, gloves, multicolored_hair, thigh_strap, long_sleeves, looking_at_viewer, staff, detached_collar, dragon_girl, streaked_hair, parted_lips, elbow_gloves
+  > Original Size: tensor([1536, 1056]), Target: tensor([1024,  704]), Crop: tensor([0, 0])
+
+--- Step: 41 (Batch Index: 3/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/1ff0a34a3451ab7f97ee7298500fc4823af020cb_person1_head.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/1ff0a34a3451ab7f97ee7298500fc4823af020cb_person1_head.png
+  > Shot Type: head
+  > Root Name: 1ff0a34a3451ab7f97ee7298500fc4823af020cb_person1
+  > Group Size: 2
+  > Caption: 1girl, ling_\(arknights\), solo, one_eye_closed, horns, blue_hair, pointy_ears, long_hair, braid, jewelry, earrings, simple_background, looking_at_viewer, necktie, white_background, blue_eyes, dragon_horns, multicolored_hair, yellow_necktie, streaked_hair, closed_mouth, portrait, makeup, open_clothes, eyeshadow, black_gloves, detached_collar, gloves, white_jacket, holding, white_coat
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1_head.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1_head.png
+  > Shot Type: head
+  > Root Name: 06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, one_eye_closed, horns, blue_hair, pointy_ears, long_hair, braid, earrings, jewelry, simple_background, looking_at_viewer, white_background, necktie, multicolored_hair, dragon_horns, blue_eyes, yellow_necktie, streaked_hair, makeup, open_clothes, portrait, closed_mouth, eyeshadow, black_gloves, detached_collar, gloves, purple_eyes, white_jacket, white_coat
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+--- Step: 42 (Batch Index: 4/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/5709cf9b8171a5f1d321b43219357d0ee29b4334_person1_halfbody.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/5709cf9b8171a5f1d321b43219357d0ee29b4334_person1_halfbody.png
+  > Shot Type: halfbody
+  > Root Name: 5709cf9b8171a5f1d321b43219357d0ee29b4334_person1
+  > Group Size: 2
+  > Caption: 1girl, ling_\(arknights\), solo, closed_eyes, blue_hair, long_hair, horns, pointy_ears, smile, necktie, breasts, white_background, braid, gloves, jewelry, yellow_necktie, open_clothes, elbow_gloves, simple_background, earrings, facing_viewer, very_long_hair, black_gloves, dragon_horns, eyeshadow, detached_collar, multicolored_hair, makeup, upper_body, coat, open_coat, shirt, gourd, parted_lips, white_coat, white_shirt, wide_sleeves, large_breasts, streaked_hair, long_sleeves, hand_up
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/2abe75a78ec23c3dbc95d4e0e469e2e7dc6f53c1_person1_halfbody.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/2abe75a78ec23c3dbc95d4e0e469e2e7dc6f53c1_person1_halfbody.png
+  > Shot Type: halfbody
+  > Root Name: 2abe75a78ec23c3dbc95d4e0e469e2e7dc6f53c1_person1
+  > Group Size: 2
+  > Caption: 1girl, ling_\(arknights\), solo, blue_hair, long_hair, horns, gourd, pointy_ears, blue_eyes, open_mouth, white_background, breasts, braid, yellow_necktie, looking_at_viewer, jewelry, necktie, earrings, simple_background, very_long_hair, open_clothes, wide_sleeves, gloves, coat, shorts, open_coat, white_coat, detached_collar, cowboy_shot, elbow_gloves, dragon_horns, black_shorts, black_gloves, shirt, white_shirt, multicolored_hair, holding, large_breasts, long_sleeves, upper_teeth_only, streaked_hair, eyeshadow
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+--- Step: 43 (Batch Index: 5/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1.png
+  > Shot Type: full
+  > Root Name: 4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), shorts, solo, blue_hair, long_hair, full_body, horns, black_shorts, pointy_ears, short_shorts, braid, holding, breasts, boots, coat, yellow_necktie, white_coat, tail, open_mouth, white_footwear, white_background, gourd, open_clothes, very_long_hair, open_coat, necktie, dragon_horns, jewelry, blue_eyes, looking_at_viewer, earrings, white_shirt, shirt, large_breasts, dragon_tail, wide_sleeves, simple_background, thigh_strap, gloves, multicolored_hair, long_sleeves, detached_collar, staff, purple_eyes, dragon_girl, elbow_gloves
+  > Original Size: tensor([1536, 1056]), Target: tensor([1024,  704]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1.png
+  > Shot Type: full
+  > Root Name: 06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), shorts, solo, blue_hair, long_hair, one_eye_closed, full_body, horns, black_shorts, pointy_ears, short_shorts, braid, holding, breasts, yellow_necktie, boots, coat, tail, white_coat, white_footwear, white_background, dragon_horns, shirt, necktie, very_long_hair, open_clothes, gourd, white_shirt, dragon_tail, open_coat, jewelry, earrings, looking_at_viewer, large_breasts, simple_background, wide_sleeves, gloves, thigh_strap, purple_eyes, long_sleeves, multicolored_hair, blue_eyes, detached_collar, staff, dragon_girl, elbow_gloves
+  > Original Size: tensor([1536, 1056]), Target: tensor([1024,  704]), Crop: tensor([0, 0])
+
+--- Step: 44 (Batch Index: 6/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1_head.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1_head.png
+  > Shot Type: head
+  > Root Name: 06e9b2080e8bf97fdb3ec44407ddbb8bf9d704d4_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, one_eye_closed, horns, blue_hair, pointy_ears, long_hair, braid, earrings, jewelry, simple_background, looking_at_viewer, white_background, necktie, multicolored_hair, dragon_horns, blue_eyes, yellow_necktie, streaked_hair, makeup, open_clothes, portrait, closed_mouth, eyeshadow, black_gloves, detached_collar, gloves, purple_eyes, white_jacket, white_coat
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1_head.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1_head.png
+  > Shot Type: head
+  > Root Name: 4a0f3555ee444fd83282973f8ad7bf000d3861fb_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, horns, blue_hair, pointy_ears, long_hair, braid, looking_at_viewer, simple_background, earrings, jewelry, open_mouth, white_background, blue_eyes, multicolored_hair, necktie, dragon_horns, open_clothes, streaked_hair, yellow_necktie, detached_collar, black_gloves, portrait, gloves, holding, white_jacket, white_coat, purple_eyes, upper_body, makeup, head_tilt, eyeshadow
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+--- Step: 45 (Batch Index: 7/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1_halfbody.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1_halfbody.png
+  > Shot Type: halfbody
+  > Root Name: 5f6e44201bc81c1c772c744eb7c8664fa00d7e27_person1
+  > Group Size: 3
+  > Caption: 1girl, ling_\(arknights\), solo, blue_hair, one_eye_closed, gourd, long_hair, horns, pointy_ears, blue_eyes, breasts, white_background, braid, yellow_necktie, necktie, jewelry, parted_lips, earrings, simple_background, gloves, open_clothes, very_long_hair, looking_at_viewer, wide_sleeves, detached_collar, elbow_gloves, coat, dragon_horns, white_coat, shorts, shirt, open_coat, multicolored_hair, black_gloves, white_shirt, cowboy_shot, black_shorts, long_sleeves, holding, large_breasts, streaked_hair, eyeshadow
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/2abe75a78ec23c3dbc95d4e0e469e2e7dc6f53c1_person1_halfbody.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/2abe75a78ec23c3dbc95d4e0e469e2e7dc6f53c1_person1_halfbody.png
+  > Shot Type: halfbody
+  > Root Name: 2abe75a78ec23c3dbc95d4e0e469e2e7dc6f53c1_person1
+  > Group Size: 2
+  > Caption: 1girl, ling_\(arknights\), solo, blue_hair, long_hair, horns, gourd, pointy_ears, blue_eyes, open_mouth, white_background, breasts, braid, yellow_necktie, looking_at_viewer, jewelry, necktie, earrings, simple_background, very_long_hair, open_clothes, wide_sleeves, gloves, coat, shorts, open_coat, white_coat, detached_collar, cowboy_shot, elbow_gloves, dragon_horns, black_shorts, black_gloves, shirt, white_shirt, multicolored_hair, holding, large_breasts, long_sleeves, upper_teeth_only, streaked_hair, eyeshadow
+  > Original Size: tensor([1280, 1280]), Target: tensor([1024, 1024]), Crop: tensor([0, 0])
+
+--- Step: 46 (Batch Index: 8/19) ---
+
+[Image Info] Key: /data/kohya_data/DUSK TRAIN/2_ling/92a2a29af18becf627809b1f1862cacc608ac957_person1.png
+  > Path: /data/kohya_data/DUSK TRAIN/2_ling/92a2a29af18becf627809b1f1862cacc608ac957_person1.png
+  > Shot Type: full
+  > Root Name: 92a2a29af18becf627809b1f1862cacc608ac957_person1
+  > Group Size: 1
+  > Caption: 1girl, ling_\(arknights\), solo, shorts, blue_hair, long_hair, one_eye_closed, horns, full_body, pointy_ears, black_shorts, breasts, smile, holding, short_shorts, braid, yellow_necktie, boots, tail, coat, white_coat, white_footwear, white_background, dragon_horns, gourd, very_long_hair, necktie, open_clothes, looking_at_viewer, dragon_tail, blue_eyes, shirt, jewelry, large_breasts, white_shirt, simple_background, earrings, open_coat, wide_sleeves, gloves, long_sleeves, dragon_girl, multicolored_hair, thigh_strap, detached_collar, staff, ;\), elbow_gloves, closed_mouth, weapon
+  > Original Size: tensor([1536, 1056]), Target: tensor([1024,  704]), Crop: tensor([0, 0])
