@@ -286,9 +286,9 @@ class AnimaNetworkTrainer(train_network.NetworkTrainer):
             latents = latents.squeeze(2)  # [B, C, 1, H, W] -> [B, C, H, W]
         noise = torch.randn_like(latents)
 
-        # Get noisy model input and timesteps
+        # Get noisy model input and timesteps (shot_types drives opt-in shot-type-aware bias; see --shot_type_bias)
         noisy_model_input, timesteps, sigmas = flux_train_utils.get_noisy_model_input_and_timesteps(
-            args, noise_scheduler, latents, noise, accelerator.device, weight_dtype
+            args, noise_scheduler, latents, noise, accelerator.device, weight_dtype, shot_types=batch.get("shot_types")
         )
         timesteps = timesteps / 1000.0  # scale to [0, 1] range. timesteps is float32
 
@@ -456,6 +456,14 @@ def setup_parser() -> argparse.ArgumentParser:
         action="store_true",
         help="offload activations to CPU RAM using async non-blocking transfers (faster than --cpu_offload_checkpointing). "
         "Cannot be used with --cpu_offload_checkpointing or --blocks_to_swap.",
+    )
+    parser.add_argument(
+        "--shot_type_bias",
+        type=float,
+        default=None,
+        help="Enable shot-type-aware timestep sampling bias. Float scale (e.g. 0.5); offsets the pre-sigmoid "
+        "sample by -scale/0/+scale for head/halfbody/full shots (parsed from filename suffix _head/_halfbody/_full). "
+        "Unset = disabled (stock behavior). / ショットタイプに応じたタイムステップサンプリングのバイアスを有効化。",
     )
     return parser
 

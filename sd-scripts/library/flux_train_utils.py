@@ -471,16 +471,31 @@ def compute_loss_weighting_for_sd3(weighting_scheme: str, sigmas=None):
 
 
 def get_noisy_model_input_and_timesteps(
-    args, noise_scheduler, latents: torch.Tensor, noise: torch.Tensor, device, dtype
+    args, noise_scheduler, latents: torch.Tensor, noise: torch.Tensor, device, dtype, shot_types: Optional[torch.Tensor] = None
 ) -> Tuple[torch.Tensor, torch.Tensor, torch.Tensor]:
     bsz, h, w = latents.shape[0], latents.shape[-2], latents.shape[-1]
     assert bsz > 0, "Batch size not large enough"
     num_timesteps = noise_scheduler.config.num_train_timesteps
+
+    # Shot-type-aware timestep bias (opt-in via --shot_type_bias). shot_types: 0=head, 1=halfbody, 2=full.
+    # Adds a per-sample offset to the pre-sigmoid normal sample for sigmoid/shift/flux_shift sampling:
+    # head (<0) -> lower noise / more detail steps, full (>0) -> higher noise / more structure steps.
+    # No effect when the arg is unset/None or shot_types is None (identical to upstream behavior).
+    _shot_mu = None
+    _shot_scale = getattr(args, "shot_type_bias", None)
+    if shot_types is not None and _shot_scale:
+        _off_table = torch.tensor([-1.0, 0.0, 1.0], device=device, dtype=torch.float32) * float(_shot_scale)
+        _idx = torch.clamp(shot_types.to(device=device, dtype=torch.long), 0, 2)
+        _shot_mu = _off_table[_idx]
+
     if args.timestep_sampling == "uniform" or args.timestep_sampling == "sigmoid":
         # Simple random sigma-based noise sampling
         if args.timestep_sampling == "sigmoid":
             # https://github.com/XLabs-AI/x-flux/tree/main
-            sigmas = torch.sigmoid(args.sigmoid_scale * torch.randn((bsz,), device=device))
+            _r = torch.randn((bsz,), device=device)
+            if _shot_mu is not None:
+                _r = _r + _shot_mu
+            sigmas = torch.sigmoid(args.sigmoid_scale * _r)
         else:
             sigmas = torch.rand((bsz,), device=device)
 
@@ -488,12 +503,16 @@ def get_noisy_model_input_and_timesteps(
     elif args.timestep_sampling == "shift":
         shift = args.discrete_flow_shift
         sigmas = torch.randn(bsz, device=device)
+        if _shot_mu is not None:
+            sigmas = sigmas + _shot_mu
         sigmas = sigmas * args.sigmoid_scale  # larger scale for more uniform sampling
         sigmas = sigmas.sigmoid()
         sigmas = (sigmas * shift) / (1 + (shift - 1) * sigmas)
         timesteps = sigmas * num_timesteps
     elif args.timestep_sampling == "flux_shift":
         sigmas = torch.randn(bsz, device=device)
+        if _shot_mu is not None:
+            sigmas = sigmas + _shot_mu
         sigmas = sigmas * args.sigmoid_scale  # larger scale for more uniform sampling
         sigmas = sigmas.sigmoid()
         mu = get_lin_function(y1=0.5, y2=1.15)((h // 2) * (w // 2))  # we are pre-packed so must adjust for packed size

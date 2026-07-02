@@ -1005,12 +1005,22 @@ class BaseDataset(torch.utils.data.Dataset):
         custom_attributes = []
         masks = []
         masked_images = []
+        shot_type_ids = []  # shot-type-aware training: 0=head, 1=halfbody, 2=full (from filename suffix)
 
         for image_key in bucket[image_index : image_index + bucket_batch_size]:
             image_info = self.image_data[image_key]
             subset = self.image_to_subset[image_key]
 
             custom_attributes.append(subset.custom_attributes)
+
+            # shot_type from filename suffix for shot-type-aware training (0=head, 1=halfbody, 2=full)
+            _shot_bn = os.path.splitext(os.path.basename(image_info.absolute_path))[0]
+            if _shot_bn.endswith("_head"):
+                shot_type_ids.append(0)
+            elif _shot_bn.endswith("_halfbody"):
+                shot_type_ids.append(1)
+            else:
+                shot_type_ids.append(2)
 
             # in case of fine tuning, is_reg is always False
             loss_weights.append(self.prior_loss_weight if image_info.is_reg else 1.0)
@@ -1236,6 +1246,7 @@ class BaseDataset(torch.utils.data.Dataset):
         example["flippeds"] = flippeds
 
         example["network_multipliers"] = torch.FloatTensor([self.network_multiplier] * len(captions))
+        example["shot_types"] = torch.LongTensor(shot_type_ids)
 
         if self.debug_dataset:
             example["image_keys"] = bucket[image_index : image_index + self.batch_size]
