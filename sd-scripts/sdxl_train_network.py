@@ -11,6 +11,7 @@ from library import sdxl_model_util, sdxl_train_util, strategy_base, strategy_sd
 import library.args as args_util
 import library.model_io as model_io
 from library.dataset import DatasetGroup, MinimalDataset
+import library.custom_train_functions as custom_train_functions
 import train_network
 from library.utils import setup_logging
 
@@ -165,10 +166,33 @@ class SdxlNetworkTrainer(train_network.NetworkTrainer):
     def sample_images(self, accelerator, args, epoch, global_step, device, vae, tokenizer, text_encoder, unet):
         sdxl_train_util.sample_images(accelerator, args, epoch, global_step, device, vae, tokenizer, text_encoder, unet)
 
+    def process_batch(self, batch, *args, **kwargs):
+        # stash shot_types for content-aware Min-SNR (see --logit_normal_weight); base training loop untouched
+        self._current_shot_types = batch.get("shot_types", None)
+        return super().process_batch(batch, *args, **kwargs)
+
+    def post_process_loss(self, loss, args, timesteps, noise_scheduler):
+        loss = super().post_process_loss(loss, args, timesteps, noise_scheduler)  # keep upstream min_snr_gamma etc.
+        scale = getattr(args, "logit_normal_weight", None)
+        if scale:
+            shot_types = getattr(self, "_current_shot_types", None)
+            loss = custom_train_functions.apply_min_snr_weight(
+                loss, timesteps, noise_scheduler, args.v_parameterization, shot_types
+            ) * scale
+        return loss
+
 
 def setup_parser() -> argparse.ArgumentParser:
     parser = train_network.setup_parser()
     sdxl_train_util.add_sdxl_training_arguments(parser)
+    parser.add_argument(
+        "--logit_normal_weight",
+        type=float,
+        default=None,
+        help="Enable content-aware Min-SNR gamma loss weighting. Per-shot-type gamma head/halfbody/full=7/5/4 "
+        "(from filename suffix _head/_halfbody/_full). Float global scale (e.g. 1.0). Unset = disabled (stock). "
+        "/ ショットタイプ別Min-SNR gamma損失重み付けを有効化。",
+    )
     return parser
 
 
