@@ -358,6 +358,9 @@ class AnimaNetworkTrainer(train_network.NetworkTrainer):
     ) -> torch.Tensor:
         """Override base process_batch for caption dropout with cached text encoder outputs."""
 
+        # stash shot_types for post_process_loss (content-aware Min-SNR gamma). 0=head, 1=halfbody, 2=full
+        self._current_shot_types = batch.get("shot_types", None)
+
         # Text encoder conditions
         text_encoder_outputs_list = batch.get("text_encoder_outputs_list", None)
         anima_text_encoding_strategy: strategy_anima.AnimaTextEncodingStrategy = text_encoding_strategy
@@ -391,6 +394,24 @@ class AnimaNetworkTrainer(train_network.NetworkTrainer):
         )
 
     def post_process_loss(self, loss, args, timesteps, noise_scheduler):
+        # Content-aware Min-SNR gamma for Anima (rectified flow), opt-in via --shot_type_min_snr.
+        # Anima passes timesteps already scaled to [0, 1], so sigma = timesteps and the flow-matching
+        # signal-to-noise ratio is SNR = ((1 - sigma) / sigma) ** 2. Per-shot gamma sets how much low-noise
+        # (high-SNR / detail) weight is kept: head high -> more detail, full low -> focus on structure.
+        # weight = min(SNR, gamma) / SNR is in (0, 1] (== 1 at high noise, -> gamma/SNR at low noise). No-op when unset.
+        scale = getattr(args, "shot_type_min_snr", None)
+        if scale:
+            shot_types = getattr(self, "_current_shot_types", None)
+            sigma = timesteps.to(device=loss.device, dtype=torch.float32).clamp(1e-4, 1.0 - 1e-4)
+            snr = ((1.0 - sigma) / sigma) ** 2
+            gamma_table = torch.tensor([7.0, 5.0, 4.0], device=loss.device, dtype=torch.float32)  # head, halfbody, full
+            if shot_types is not None:
+                idx = torch.clamp(shot_types.to(device=loss.device, dtype=torch.long), 0, 2)
+                gamma = gamma_table[idx]
+            else:
+                gamma = torch.full_like(snr, 5.0)
+            weight = torch.minimum(snr, gamma) / snr
+            loss = loss * weight.to(loss.dtype) * float(scale)
         return loss
 
     def get_sai_model_spec(self, args):
@@ -464,6 +485,14 @@ def setup_parser() -> argparse.ArgumentParser:
         help="Enable shot-type-aware timestep sampling bias. Float scale (e.g. 0.5); offsets the pre-sigmoid "
         "sample by -scale/0/+scale for head/halfbody/full shots (parsed from filename suffix _head/_halfbody/_full). "
         "Unset = disabled (stock behavior). / ショットタイプに応じたタイムステップサンプリングのバイアスを有効化。",
+    )
+    parser.add_argument(
+        "--shot_type_min_snr",
+        type=float,
+        default=None,
+        help="Enable content-aware Min-SNR gamma loss weighting for Anima (rectified flow). Float global scale "
+        "(e.g. 1.0). Per-shot gamma head/halfbody/full = 7/5/4 (from filename suffix). Unset = disabled. "
+        "Independent of --shot_type_bias. / ショットタイプ別Min-SNR gamma損失重み付けを有効化。",
     )
     return parser
 
